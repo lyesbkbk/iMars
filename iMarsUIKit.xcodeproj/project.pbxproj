@@ -13,6 +13,7 @@
 		059BFBE426034CF000F6970F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE326034CF000F6970F /* Assets.xcassets */; };
 		059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE626034CF000F6970F /* Preview Assets.xcassets */; };
 		059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE826034CF000F6970F /* LaunchScreen.storyboard */; };
+		059BFBF526034E3200F6970F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBF426034E3200F6970F /* Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		059BFBE626034CF000F6970F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		059BFBE926034CF000F6970F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		059BFBEB26034CF000F6970F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		059BFBF426034E3200F6970F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				059BFBDD26034CEE00F6970F /* AppDelegate.swift */,
 				059BFBDF26034CEE00F6970F /* SceneDelegate.swift */,
 				059BFBE126034CEE00F6970F /* ContentView.swift */,
+				059BFBF426034E3200F6970F /* Preview.swift */,
 				059BFBE326034CF000F6970F /* Assets.xcassets */,
 				059BFBE826034CF000F6970F /* LaunchScreen.storyboard */,
 				059BFBEB26034CF000F6970F /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
+				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
 				059BFBE226034CEE00F6970F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -317,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
