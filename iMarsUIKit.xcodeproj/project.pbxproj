@@ -21,6 +21,8 @@
 		22E6B89C26038BF800930561 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89826038BF800930561 /* VideoView.swift */; };
 		22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89926038BF800930561 /* ArticlesView.swift */; };
 		22E6B8AD260393D400930561 /* ApiPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8AC260393D400930561 /* ApiPhotos.swift */; };
+		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
+		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
@@ -43,6 +45,8 @@
 		22E6B89826038BF800930561 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		22E6B89926038BF800930561 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
 		22E6B8AC260393D400930561 /* ApiPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPhotos.swift; sourceTree = "<group>"; };
+		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
+		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 				22E6B8A426038C2300930561 /* Saved */,
 				22E6B8A326038C1B00930561 /* Map */,
 				22E6B8A026038BFE00930561 /* Libray */,
+				A9D4766426035C4300D9E910 /* Main Screen */,
 				059BFBDD26034CEE00F6970F /* AppDelegate.swift */,
 				059BFBDF26034CEE00F6970F /* SceneDelegate.swift */,
 				059BFBF426034E3200F6970F /* Preview.swift */,
@@ -144,6 +149,23 @@
 				22E6B8AC260393D400930561 /* ApiPhotos.swift */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		A9D4766426035C4300D9E910 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				A9D4766826035D3200D9E910 /* Object 3D */,
+				A9D4766926035DA000D9E910 /* MarsScreen.swift */,
+			);
+			name = "Main Screen";
+			sourceTree = "<group>";
+		};
+		A9D4766826035D3200D9E910 /* Object 3D */ = {
+			isa = PBXGroup;
+			children = (
+				A9D4766526035D2100D9E910 /* Mars_3D.usdz */,
+			);
+			name = "Object 3D";
 			sourceTree = "<group>";
 		};
 		D36B0A02260352330072D750 /* BibliLaura */ = {
@@ -213,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */,
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
@@ -240,6 +263,8 @@
 				22E6B89A26038BF800930561 /* AllView.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
 				22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */,
+				A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */,
+				059BFBE226034CEE00F6970F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
