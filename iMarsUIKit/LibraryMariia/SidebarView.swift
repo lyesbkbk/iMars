@@ -13,7 +13,8 @@ enum SidebarItems: String, CaseIterable {
     case articles = "Articles"
     
     func systemName() -> String {
-        return "star"
+        case all return "star"
+        case photos return ""
     }
     
     func view() -> AnyView {
