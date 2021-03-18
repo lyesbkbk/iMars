@@ -17,6 +17,8 @@
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
+		D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A0C260367910072D750 /* DetailViewArticle.swift */; };
+		D36B0A12260368820072D750 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A11260368820072D750 /* ArticleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
+		D36B0A0C260367910072D750 /* DetailViewArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewArticle.swift; sourceTree = "<group>"; };
+		D36B0A11260368820072D750 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +92,29 @@
 		D36B0A02260352330072D750 /* BibliLaura */ = {
 			isa = PBXGroup;
 			children = (
+				D36B0A0F260368000072D750 /* BibliListe */,
+				D36B0A10260368130072D750 /* Article */,
+			);
+			name = BibliLaura;
+			sourceTree = "<group>";
+		};
+		D36B0A0F260368000072D750 /* BibliListe */ = {
+			isa = PBXGroup;
+			children = (
 				D36B0A04260352760072D750 /* BibliLauraModel.swift */,
 				D36B0A05260352770072D750 /* BibliLauraTag.swift */,
 				D36B0A03260352760072D750 /* BibliLauraView.swift */,
 			);
-			name = BibliLaura;
+			name = BibliListe;
+			sourceTree = "<group>";
+		};
+		D36B0A10260368130072D750 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				D36B0A0C260367910072D750 /* DetailViewArticle.swift */,
+				D36B0A11260368820072D750 /* ArticleModel.swift */,
+			);
+			name = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
+				D36B0A12260368820072D750 /* ArticleModel.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
+				D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
 				059BFBE226034CEE00F6970F /* ContentView.swift in Sources */,
