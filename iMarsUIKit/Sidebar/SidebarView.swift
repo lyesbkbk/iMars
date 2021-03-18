@@ -61,7 +61,7 @@ enum Sidbar3Dlibrary: String, CaseIterable {
     }
     
     func view() -> AnyView {
-        return AnyView(ModelView())
+        return AnyView(PhotoView())
     }
 }
 
