@@ -17,6 +17,7 @@
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
+		F95BAF5E2603675E0037B247 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BAF5D2603675E0037B247 /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
+		F95BAF5D2603675E0037B247 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		059BFBDC26034CEE00F6970F /* iMarsUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F95BAF5D2603675E0037B247 /* VideoView.swift */,
 				059BFBDD26034CEE00F6970F /* AppDelegate.swift */,
 				059BFBDF26034CEE00F6970F /* SceneDelegate.swift */,
 				059BFBE126034CEE00F6970F /* ContentView.swift */,
@@ -169,6 +172,7 @@
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
+				F95BAF5E2603675E0037B247 /* VideoView.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
 				059BFBE226034CEE00F6970F /* ContentView.swift in Sources */,
