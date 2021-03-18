@@ -10,19 +10,21 @@ import SwiftUI
 struct Model3DRaw: View {
     var body: some View {
         
-        ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)) {
-            
-            Image("Curiosity")
-                .resizable()
-                .scaledToFit()
-                .cornerRadius(10)
-                .frame(maxWidth : 200)
-            Text("Curiosity")
-                .font(.title2)
-                .padding()
+        ZStack{
+        Image("Curiosity")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            VStack {
+                Text("Curiosity")
+                    .font(.system(size: 150))
+                    
+                    .fontWeight(.semibold)
+                Spacer()
+            }.padding(.top)
+        }
         }
     }
-}
+
 
 struct Model3DRaw_Previews: PreviewProvider {
     static var previews: some View {

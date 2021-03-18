@@ -14,9 +14,15 @@ struct Model3DView: View {
             Image("Curiosity")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                
+                VStack {
+                    Text("Curiosity")
+                        .font(.system(size: 150))
+                        
+                        .fontWeight(.semibold)
+                    Spacer()
+                }.padding(.top)
             }
-            Spacer()
+//            Spacer()
             HStack{
                 
             }
