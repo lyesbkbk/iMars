@@ -21,6 +21,7 @@
 		22E6B89B26038BF800930561 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89626038BF800930561 /* PhotoView.swift */; };
 		22E6B89C26038BF800930561 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89826038BF800930561 /* VideoView.swift */; };
 		22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89926038BF800930561 /* ArticlesView.swift */; };
+		22E6B8AD260393D400930561 /* ApiPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8AC260393D400930561 /* ApiPhotos.swift */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
@@ -43,6 +44,7 @@
 		22E6B89726038BF800930561 /* AllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllView.swift; sourceTree = "<group>"; };
 		22E6B89826038BF800930561 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		22E6B89926038BF800930561 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		22E6B8AC260393D400930561 /* ApiPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPhotos.swift; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
@@ -106,9 +108,9 @@
 		22E6B8A026038BFE00930561 /* Libray */ = {
 			isa = PBXGroup;
 			children = (
+				22E6B8AF2603961000930561 /* Photos */,
 				22E6B89726038BF800930561 /* AllView.swift */,
 				22E6B89926038BF800930561 /* ArticlesView.swift */,
-				22E6B89626038BF800930561 /* PhotoView.swift */,
 				22E6B89826038BF800930561 /* VideoView.swift */,
 			);
 			path = Libray;
@@ -144,6 +146,15 @@
 				22E6B88A26038B9900930561 /* ModelView.swift */,
 			);
 			path = 3DModels;
+			sourceTree = "<group>";
+		};
+		22E6B8AF2603961000930561 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				22E6B89626038BF800930561 /* PhotoView.swift */,
+				22E6B8AC260393D400930561 /* ApiPhotos.swift */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 		D36B0A02260352330072D750 /* BibliLaura */ = {
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
+				22E6B8AD260393D400930561 /* ApiPhotos.swift in Sources */,
 				22E6B89B26038BF800930561 /* PhotoView.swift in Sources */,
 				22E6B88826038B8E00930561 /* SidebarView.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
