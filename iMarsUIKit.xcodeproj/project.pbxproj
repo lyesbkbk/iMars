@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050E3C4326039DC500D646D6 /* Mars.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 050E3C4226039DC500D646D6 /* Mars.usdz */; };
 		059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBDD26034CEE00F6970F /* AppDelegate.swift */; };
 		059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBDF26034CEE00F6970F /* SceneDelegate.swift */; };
 		059BFBE226034CEE00F6970F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBE126034CEE00F6970F /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050E3C4226039DC500D646D6 /* Mars.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars.usdz; sourceTree = "<group>"; };
 		059BFBDA26034CEE00F6970F /* iMarsUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarsUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059BFBDD26034CEE00F6970F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		059BFBDF26034CEE00F6970F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050E3C472603A90100D646D6 /* Model3D */ = {
+			isa = PBXGroup;
+			children = (
+				050E3C4226039DC500D646D6 /* Mars.usdz */,
+			);
+			path = Model3D;
+			sourceTree = "<group>";
+		};
+		050E3C482603A92400D646D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				059BFBDD26034CEE00F6970F /* AppDelegate.swift */,
+				059BFBDF26034CEE00F6970F /* SceneDelegate.swift */,
+				059BFBF426034E3200F6970F /* Preview.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		050E3C4A2603A93400D646D6 /* Model3DView */ = {
+			isa = PBXGroup;
+			children = (
+				059BFC002603519800F6970F /* Model3D.swift */,
+				059BFC012603519800F6970F /* Model3DRaw.swift */,
+				059BFBFF2603519800F6970F /* Model3DView.swift */,
+			);
+			path = Model3DView;
+			sourceTree = "<group>";
+		};
 		059BFBD126034CEE00F6970F = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +94,10 @@
 		059BFBDC26034CEE00F6970F /* iMarsUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				059BFBDD26034CEE00F6970F /* AppDelegate.swift */,
-				059BFBDF26034CEE00F6970F /* SceneDelegate.swift */,
+				050E3C472603A90100D646D6 /* Model3D */,
+				050E3C482603A92400D646D6 /* Main */,
+				050E3C4A2603A93400D646D6 /* Model3DView */,
 				059BFBE126034CEE00F6970F /* ContentView.swift */,
-				059BFC002603519800F6970F /* Model3D.swift */,
-				059BFC012603519800F6970F /* Model3DRaw.swift */,
-				059BFBFF2603519800F6970F /* Model3DView.swift */,
-				059BFBF426034E3200F6970F /* Preview.swift */,
 				059BFBE326034CF000F6970F /* Assets.xcassets */,
 				059BFBE826034CF000F6970F /* LaunchScreen.storyboard */,
 				059BFBEB26034CF000F6970F /* Info.plist */,
@@ -146,6 +173,7 @@
 			files = (
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
+				050E3C4326039DC500D646D6 /* Mars.usdz in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +334,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -326,6 +355,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

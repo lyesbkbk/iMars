@@ -1,5 +1,5 @@
 //
-//  Model3DView.swift
+//  Model3DRaw.swift
 //  iMars
 //
 //  Created by Lyes BOUKBOUKA on 18/03/2021.
@@ -7,33 +7,34 @@
 
 import SwiftUI
 
-struct Model3DView: View {
+struct Model3DRaw: View {
+    let item : Model3D
     var body: some View {
-        VStack{
+        
+        VStack {
             ZStack{
-            Image("Curiosity")
+                Image(item.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .cornerRadius(10)
                 VStack {
-                    Text("Curiosity")
-                        .font(.system(size: 150))
+                    Text(item.name)
+                        .font(.title)
                         
                         .fontWeight(.semibold)
                     Spacer()
                 }.padding(.top)
             }
-//            Spacer()
-            HStack{
-                
-            }
+        }.cornerRadius(20)
         }
     }
-}
 
-struct Model3DView_Previews: PreviewProvider {
+
+struct Model3DRaw_Previews: PreviewProvider {
     static var previews: some View {
         Landscape {
-            Model3DView()
+            Model3DRaw(item: Model3D.model[0])
         }
+        
     }
 }
