@@ -26,6 +26,8 @@ struct Model3DView: View {
 
 struct Model3DView_Previews: PreviewProvider {
     static var previews: some View {
-        Model3DView()
+        Landscape {
+            Model3DView()
+        }
     }
 }
