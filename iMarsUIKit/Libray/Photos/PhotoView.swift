@@ -6,11 +6,27 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct PhotoView: View {
+    @State var photosStore: PhotoRoot?
+    
+    var items: [PhotoItem] {
+        photosStore?.collection.items.filter{ $0.data.first?.center != "HQ" } ?? []
+    }
+    
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            List(items) { item in
+                if let urlString = item.links?.first?.href,
+                   let url = URL(string: urlString) {
+                   KFImage(url)
+                }
+            }
+        }.onAppear {
+            PhotoAPI.fetch { photos in
+                self.photosStore = photos
+            }
         }
         
     }
