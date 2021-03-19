@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		050E3C4326039DC500D646D6 /* Mars.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 050E3C4226039DC500D646D6 /* Mars.usdz */; };
 		059426B52604DDD2003E05CB /* Curiosity.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B42604DDD2003E05CB /* Curiosity.usdz */; };
-		059426C02604DEAB003E05CB /* Perseverance-2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B72604DEA9003E05CB /* Perseverance-2.usdz */; };
-		059426C12604DEAB003E05CB /* Deimos_1_1000.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B82604DEA9003E05CB /* Deimos_1_1000.usdz */; };
+		059426C02604DEAB003E05CB /* Perseverance.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B72604DEA9003E05CB /* Perseverance.usdz */; };
+		059426C12604DEAB003E05CB /* Deimos.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B82604DEA9003E05CB /* Deimos.usdz */; };
 		059426C22604DEAB003E05CB /* MRO.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B92604DEA9003E05CB /* MRO.usdz */; };
-		059426C32604DEAB003E05CB /* Ingenuity_v3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BA2604DEAA003E05CB /* Ingenuity_v3.usdz */; };
-		059426C42604DEAB003E05CB /* MER_static.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BB2604DEAA003E05CB /* MER_static.usdz */; };
-		059426C52604DEAB003E05CB /* InSight_deployed.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BC2604DEAA003E05CB /* InSight_deployed.usdz */; };
+		059426C32604DEAB003E05CB /* Ingenuity.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BA2604DEAA003E05CB /* Ingenuity.usdz */; };
+		059426C42604DEAB003E05CB /* MER.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BB2604DEAA003E05CB /* MER.usdz */; };
+		059426C52604DEAB003E05CB /* InSight.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BC2604DEAA003E05CB /* InSight.usdz */; };
 		059426C62604DEAB003E05CB /* Odyssey.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BD2604DEAB003E05CB /* Odyssey.usdz */; };
-		059426C72604DEAB003E05CB /* Phobos_1_1000.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BE2604DEAB003E05CB /* Phobos_1_1000.usdz */; };
+		059426C72604DEAB003E05CB /* Phobos.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BE2604DEAB003E05CB /* Phobos.usdz */; };
 		059426C82604DEAB003E05CB /* Maven.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BF2604DEAB003E05CB /* Maven.usdz */; };
 		059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBDD26034CEE00F6970F /* AppDelegate.swift */; };
 		059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBDF26034CEE00F6970F /* SceneDelegate.swift */; };
@@ -33,14 +33,14 @@
 /* Begin PBXFileReference section */
 		050E3C4226039DC500D646D6 /* Mars.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars.usdz; sourceTree = "<group>"; };
 		059426B42604DDD2003E05CB /* Curiosity.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Curiosity.usdz; sourceTree = "<group>"; };
-		059426B72604DEA9003E05CB /* Perseverance-2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Perseverance-2.usdz"; sourceTree = "<group>"; };
-		059426B82604DEA9003E05CB /* Deimos_1_1000.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Deimos_1_1000.usdz; sourceTree = "<group>"; };
+		059426B72604DEA9003E05CB /* Perseverance.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Perseverance.usdz; sourceTree = "<group>"; };
+		059426B82604DEA9003E05CB /* Deimos.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Deimos.usdz; sourceTree = "<group>"; };
 		059426B92604DEA9003E05CB /* MRO.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = MRO.usdz; sourceTree = "<group>"; };
-		059426BA2604DEAA003E05CB /* Ingenuity_v3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Ingenuity_v3.usdz; sourceTree = "<group>"; };
-		059426BB2604DEAA003E05CB /* MER_static.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = MER_static.usdz; sourceTree = "<group>"; };
-		059426BC2604DEAA003E05CB /* InSight_deployed.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = InSight_deployed.usdz; sourceTree = "<group>"; };
+		059426BA2604DEAA003E05CB /* Ingenuity.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Ingenuity.usdz; sourceTree = "<group>"; };
+		059426BB2604DEAA003E05CB /* MER.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = MER.usdz; sourceTree = "<group>"; };
+		059426BC2604DEAA003E05CB /* InSight.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = InSight.usdz; sourceTree = "<group>"; };
 		059426BD2604DEAB003E05CB /* Odyssey.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Odyssey.usdz; sourceTree = "<group>"; };
-		059426BE2604DEAB003E05CB /* Phobos_1_1000.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Phobos_1_1000.usdz; sourceTree = "<group>"; };
+		059426BE2604DEAB003E05CB /* Phobos.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Phobos.usdz; sourceTree = "<group>"; };
 		059426BF2604DEAB003E05CB /* Maven.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Maven.usdz; sourceTree = "<group>"; };
 		059BFBDA26034CEE00F6970F /* iMarsUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarsUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059BFBDD26034CEE00F6970F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,15 +72,15 @@
 			children = (
 				050E3C4226039DC500D646D6 /* Mars.usdz */,
 				059426B42604DDD2003E05CB /* Curiosity.usdz */,
-				059426B82604DEA9003E05CB /* Deimos_1_1000.usdz */,
-				059426BA2604DEAA003E05CB /* Ingenuity_v3.usdz */,
-				059426BC2604DEAA003E05CB /* InSight_deployed.usdz */,
+				059426B82604DEA9003E05CB /* Deimos.usdz */,
+				059426BA2604DEAA003E05CB /* Ingenuity.usdz */,
+				059426BC2604DEAA003E05CB /* InSight.usdz */,
 				059426BF2604DEAB003E05CB /* Maven.usdz */,
-				059426BB2604DEAA003E05CB /* MER_static.usdz */,
+				059426BB2604DEAA003E05CB /* MER.usdz */,
 				059426B92604DEA9003E05CB /* MRO.usdz */,
 				059426BD2604DEAB003E05CB /* Odyssey.usdz */,
-				059426B72604DEA9003E05CB /* Perseverance-2.usdz */,
-				059426BE2604DEAB003E05CB /* Phobos_1_1000.usdz */,
+				059426B72604DEA9003E05CB /* Perseverance.usdz */,
+				059426BE2604DEAB003E05CB /* Phobos.usdz */,
 			);
 			path = Model3D;
 			sourceTree = "<group>";
@@ -202,18 +202,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
-				059426C72604DEAB003E05CB /* Phobos_1_1000.usdz in Resources */,
+				059426C72604DEAB003E05CB /* Phobos.usdz in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
 				059426C22604DEAB003E05CB /* MRO.usdz in Resources */,
-				059426C32604DEAB003E05CB /* Ingenuity_v3.usdz in Resources */,
+				059426C32604DEAB003E05CB /* Ingenuity.usdz in Resources */,
 				050E3C4326039DC500D646D6 /* Mars.usdz in Resources */,
-				059426C02604DEAB003E05CB /* Perseverance-2.usdz in Resources */,
+				059426C02604DEAB003E05CB /* Perseverance.usdz in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
-				059426C52604DEAB003E05CB /* InSight_deployed.usdz in Resources */,
+				059426C52604DEAB003E05CB /* InSight.usdz in Resources */,
 				059426C62604DEAB003E05CB /* Odyssey.usdz in Resources */,
 				059426B52604DDD2003E05CB /* Curiosity.usdz in Resources */,
-				059426C42604DEAB003E05CB /* MER_static.usdz in Resources */,
-				059426C12604DEAB003E05CB /* Deimos_1_1000.usdz in Resources */,
+				059426C42604DEAB003E05CB /* MER.usdz in Resources */,
+				059426C12604DEAB003E05CB /* Deimos.usdz in Resources */,
 				059426C82604DEAB003E05CB /* Maven.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
