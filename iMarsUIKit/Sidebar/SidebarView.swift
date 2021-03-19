@@ -29,9 +29,9 @@ enum SidearLibraryItems: String, CaseIterable {
     func view() -> AnyView {
         switch self {
         case .all:
-            return AnyView(AllView())
+            return AnyView(HQView())
         case .photos:
-            return AnyView(PhotoView())
+            return AnyView(StructurePhotosView())
         case .videos:
             return AnyView(VideoView())
         case .articles:
@@ -61,7 +61,7 @@ enum Sidbar3Dlibrary: String, CaseIterable {
     }
     
     func view() -> AnyView {
-        return AnyView(PhotoView())
+        return AnyView(StructurePhotosView())
     }
 }
 
