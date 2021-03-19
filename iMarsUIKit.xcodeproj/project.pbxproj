@@ -19,6 +19,7 @@
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
 		D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A0C260367910072D750 /* DetailViewArticle.swift */; };
 		D36B0A12260368820072D750 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A11260368820072D750 /* ArticleModel.swift */; };
+		D36B0A1D2604F3770072D750 /* Colorpicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A1C2604F3770072D750 /* Colorpicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
 		D36B0A0C260367910072D750 /* DetailViewArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewArticle.swift; sourceTree = "<group>"; };
 		D36B0A11260368820072D750 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		D36B0A1C2604F3770072D750 /* Colorpicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorpicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		D36B0A152604A84D0072D750 /* ARDraw */ = {
 			isa = PBXGroup;
 			children = (
+				D36B0A1C2604F3770072D750 /* Colorpicker.swift */,
 			);
 			name = ARDraw;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
+				D36B0A1D2604F3770072D750 /* Colorpicker.swift in Sources */,
 				D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
