@@ -75,6 +75,7 @@
 				059BFBE326034CF000F6970F /* Assets.xcassets */,
 				059BFBE826034CF000F6970F /* LaunchScreen.storyboard */,
 				059BFBEB26034CF000F6970F /* Info.plist */,
+				D36B0A152604A84D0072D750 /* ARDraw */,
 				D36B0A02260352330072D750 /* BibliLaura */,
 				059BFBE526034CF000F6970F /* Preview Content */,
 			);
@@ -115,6 +116,13 @@
 				D36B0A11260368820072D750 /* ArticleModel.swift */,
 			);
 			name = Article;
+			sourceTree = "<group>";
+		};
+		D36B0A152604A84D0072D750 /* ARDraw */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ARDraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
