@@ -2,21 +2,22 @@
 //  ContentView.swift
 //  iMarsUIKit
 //
-//  Created by Lyes BOUKBOUKA on 18/03/2021.
+//  Created by Kevin MASLOWSKI on 19/03/2021.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MarsScreen()
+        NavigationView {
+            SidebarView()
+            MarsScreen()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Landscape {
-            ContentView()
-        }
+        ContentView()
     }
 }

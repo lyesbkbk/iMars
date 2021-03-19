@@ -26,6 +26,7 @@
 		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
 		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
 		A9E8E4142604B68D005E45A7 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E4132604B68D005E45A7 /* Weather.swift */; };
+		A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E4162604E822005E45A7 /* ContentView.swift */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
@@ -52,6 +53,7 @@
 		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
 		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
 		A9E8E4132604B68D005E45A7 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		A9E8E4162604E822005E45A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				059BFBEB26034CF000F6970F /* Info.plist */,
 				D36B0A02260352330072D750 /* BibliLaura */,
 				059BFBE526034CF000F6970F /* Preview Content */,
+				A9E8E4162604E822005E45A7 /* ContentView.swift */,
 			);
 			path = iMarsUIKit;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
 				22E6B89A26038BF800930561 /* AllView.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
+				A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */,
 				22E6B8D12603D10400930561 /* PhotoAPI.swift in Sources */,
 				22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */,
 				A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */,
@@ -420,13 +424,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 8U92M4RWTJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = KevinM.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -440,13 +445,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 8U92M4RWTJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = KevinM.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;

@@ -30,11 +30,10 @@ struct MarsScreen: View {
     var body: some View {
         ZStack {
             SceneView(scene: scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             HStack {
                 Spacer()
                 VStack {
-                    Group {
+                    VStack {
                         Text("Mars\n")
                             .bold()
                             .font(.title2)
@@ -45,7 +44,7 @@ struct MarsScreen: View {
                     .multilineTextAlignment(.trailing)
                     .background(Color.black .opacity(0.5))
                     .cornerRadius(10)
-                    Group {
+                    VStack {
                         Text("Terre\n")
                             .bold()
                             .font(.title2)
@@ -57,12 +56,11 @@ struct MarsScreen: View {
                     .background(Color.black .opacity(0.5))
                     .cornerRadius(10)
                 }
-                .alignmentGuide(HorizontalAlignment.trailing, computeValue: { dimension in
-                    200
-                })
+                .offset(x: -20)
             }
-            
         }
+        .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
+        .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: Button(action: {
             self.unseeMode.toggle()
             print("coucou")
@@ -72,6 +70,8 @@ struct MarsScreen: View {
         }))
     }
 }
+
+
 
 struct MarsScreen_Previews: PreviewProvider {
     static var previews: some View {

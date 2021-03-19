@@ -23,7 +23,7 @@ enum SidearLibraryItems: String, CaseIterable {
         case.articles:
             return "newspaper.fill"
         }
-       
+        
     }
     
     func view() -> AnyView {
@@ -88,44 +88,46 @@ struct SidebarHeaderView: View {
     }
 }
 
+// TODO : Garder en mémoire l'emplacement de l'utilisateur
+
 struct SidebarView: View {    
     var body: some View {
-        NavigationView {
-            List {
-                Section(header: SidebarHeaderView(title: "Mars")) {
+        List {
+            Section(header: SidebarHeaderView(title: "Mars")) {
+                NavigationLink(
+                    destination: MarsScreen(),
+                    label: {
+                        SidebarRow(title: "Mars", systemImageName: "map")
+                    })
+            }
+            Section(header:SidebarHeaderView (title: "Library")) {
+                ForEach(SidearLibraryItems.allCases, id: \.self) { item in
                     NavigationLink(
-                        destination: MarsScreen(),
+                        destination: item.view(),
                         label: {
-                            SidebarRow(title: "Mars", systemImageName: "map")
+                            SidebarRow(title: item.rawValue, systemImageName: item.systemName())
                         })
                 }
-                Section(header:SidebarHeaderView (title: "Library")) {
-                    ForEach(SidearLibraryItems.allCases, id: \.self) { item in
-                        NavigationLink(
-                            destination: item.view(),
-                            label: {
-                                SidebarRow(title: item.rawValue, systemImageName: item.systemName())
-                            })
-                    }
-                }
-                Section(header: SidebarHeaderView (title: "3D Models")) {
-                    ForEach(Sidbar3Dlibrary.allCases, id: \.self) { item in
-                        NavigationLink(
-                            destination: item.view(),
-                            label: {
-                                SidebarRow(title: item.rawValue, systemImageName: item.systemName())
-                            })
-                    }
-                }
-                Section(header: SidebarHeaderView (title: "Saved")) {
+            }
+            Section(header: SidebarHeaderView (title: "3D Models")) {
+                ForEach(Sidbar3Dlibrary.allCases, id: \.self) { item in
                     NavigationLink(
-                        destination: SavedView(),
+                        destination: item.view(),
                         label: {
-                            Text("Saved")
+                            SidebarRow(title: item.rawValue, systemImageName: item.systemName())
                         })
                 }
-            }.listStyle(SidebarListStyle())
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+            }
+            Section(header: SidebarHeaderView (title: "Saved")) {
+                NavigationLink(
+                    destination: SavedView(),
+                    label: {
+                        Text("Saved")
+                    })
+            }
+        }
+        .listStyle(SidebarListStyle())
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
 }
 
