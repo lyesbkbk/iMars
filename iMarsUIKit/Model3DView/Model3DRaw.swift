@@ -16,11 +16,11 @@ struct Model3DRaw: View {
                 Image(item.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .cornerRadius(10)
+                .cornerRadius(8)
                 VStack {
                     Text(item.name)
                         .font(.title)
-                        
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                         .fontWeight(.semibold)
                     Spacer()
                 }.padding(.top)

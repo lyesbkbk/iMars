@@ -15,13 +15,14 @@ let fileName : String
 let desc : String
 let type : String
 
+    
   
 
 }
 
 extension Model3D {
    static let model = [
-        Model3D(name: "Curiosity", fileName: "Curiosity.usdz", desc: "Description de curiosity", type: "Model3D"),
+        Model3D(name: "Curiosity", fileName: "Mars.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "Curiosity", fileName: "Curiosity.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "Curiosity", fileName: "Curiosity.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "Curiosity", fileName: "Curiosity.usdz", desc: "Description de curiosity", type: "Model3D"),
