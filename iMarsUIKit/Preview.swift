@@ -15,3 +15,4 @@ struct Landscape<Content>: View where Content: View {
         content().previewLayout(PreviewLayout.fixed(width: width, height: height))
     }
 }
+
