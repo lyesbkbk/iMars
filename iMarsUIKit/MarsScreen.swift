@@ -12,22 +12,64 @@ import SceneKit
 
 struct MarsScreen: View {
     
-    
+    // Init 3D Mars with a space background
     let scnScene: SCNScene? = {
-        if let x = SCNScene(named: "Mars_3D.usdz") {
-            x.background.contents = UIImage(named: "MainScreenBackground")
-            return x
+        if let mars3D = SCNScene(named: "Mars_3D.usdz") {
+            mars3D.background.contents = UIImage(named: "MainScreenBackground")
+            return mars3D
         }
         return nil
     }()
     
+    // If true : Change icon button
+    @State var unseeMode: Bool = false
+    
+    // If false : hide informations
+    @State var showInformation: Bool = true
+    
     var body: some View {
         ZStack {
-            Image("MainScreenBackground")
             SceneView(scene: scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            HStack {
+                Spacer()
+                VStack {
+                    Group {
+                        Text("Mars\n")
+                            .bold()
+                            .font(.title2)
+                            .foregroundColor(Color(UIColor(named: "rediMars")!))
+                            + Text("Températures °C\n*insert data*\nPression PA\n*insert data*\nGravité m/s²\n*insert data*\nO\nObjets martiens\n")
+                    }
+                    .padding()
+                    .multilineTextAlignment(.trailing)
+                    .background(Color.black .opacity(0.5))
+                    .cornerRadius(10)
+                    Group {
+                        Text("Terre\n")
+                            .bold()
+                            .font(.title2)
+                            .foregroundColor(Color(UIColor(named: "blueiMars")!))
+                            + Text("Températures °C\n*insert data*\nPression PA\n*insert data*\nGravité m/s²\n*insert data*\nO\nObjets terrestres\n")
+                    }
+                    .padding()
+                    .multilineTextAlignment(.trailing)
+                    .background(Color.black .opacity(0.5))
+                    .cornerRadius(10)
+                }
+                .alignmentGuide(HorizontalAlignment.trailing, computeValue: { dimension in
+                    200
+                })
+            }
+            
         }
-        .navigationTitle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Title@*/Text("Title")/*@END_MENU_TOKEN@*/)
+        .navigationBarItems(trailing: Button(action: {
+            self.unseeMode.toggle()
+            print("coucou")
+        }, label: {
+            Image(systemName: self.unseeMode == false ? "eye" : "eye.slash")
+                .foregroundColor(Color(UIColor(named: "rediMars")!))
+        }))
     }
 }
 

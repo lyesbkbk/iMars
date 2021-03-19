@@ -94,7 +94,7 @@ struct SidebarView: View {
             List {
                 Section(header: SidebarHeaderView(title: "Mars")) {
                     NavigationLink(
-                        destination: MapView(),
+                        destination: MarsScreen(),
                         label: {
                             SidebarRow(title: "Mars", systemImageName: "map")
                         })
