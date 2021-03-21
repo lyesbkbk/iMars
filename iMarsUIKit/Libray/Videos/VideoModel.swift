@@ -10,7 +10,7 @@ import Foundation
 struct Video: Identifiable {
     let id = UUID()
     let titel: String
-    let date: Date
+    let date: String
     let source: String
     let description: String
 }
