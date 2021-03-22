@@ -10,30 +10,23 @@ import Kingfisher
 
 
 struct DetailsPhotosView: View {
-    let item: PhotoItem
+    let item: RoverPhoto
     
     var body: some View {
         ScrollView {
             VStack {
-                if let urlString = item.links?.first?.href,
-                   let url = URL(string: urlString) {
+                if let url = URL(string: item.img_src) {
                     KFImage(url)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(maxWidth: 500)
+                        .frame(maxWidth: 700)
                         .cornerRadius(5.0)
                 }
-                Text(item.data.first?.title ?? "No title")
+                Text(item.rover.name)
                     .font(.title)
-                Text(item.data.first?.description ?? "No description")
+                Text(item.rover.name)
                 
             }
         }
-    }
-}
-
-struct DetailsPhotosView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailsPhotosView(item: .init(links: nil, data: []))
     }
 }

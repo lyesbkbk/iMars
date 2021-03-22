@@ -10,35 +10,30 @@ import Kingfisher
 import WaterfallGrid
 
 struct StructurePhotosView: View {
-    @State var photosStore: PhotoRoot?
-    
-    var items: [PhotoItem] {
-        photosStore?.collection.items.filter{ $0.data.first?.center != "HQ" } ?? []
-    }
+    @State var roverStore: RoverRoot?
     
     var body: some View {
         ScrollView(.vertical) {
-            WaterfallGrid(items) { item in
+            WaterfallGrid(roverStore?.photos ?? []) { item in
                 NavigationLink(
                     destination: DetailsPhotosView(item: item),
                     label: {
                         Group {
-                            if let urlString = item.links?.first?.href,
-                               let url = URL(string: urlString) {
+                            if let url = URL(string: item.img_src) {
                                 KFImage(url)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 400, height: 400)
+                                    .frame(width: 200, height: 200)
                             }
                         }
                         
                     })
                 
-            }
+            }.gridStyle(columns: 4)
         }.onAppear {
-            if photosStore == nil {
-                PhotoAPI.fetch { photos in
-                    self.photosStore = photos
+            if roverStore == nil {
+                RoverAPI.fetch { root  in
+                    roverStore = root
                 }
             }
         }
@@ -48,6 +43,6 @@ struct StructurePhotosView: View {
 
 struct StructurePhotosView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoView()
+        StructurePhotosView()
     }
 }
