@@ -10,13 +10,13 @@ import SwiftUI
 struct Colorpicker: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        VStack {
-                           ColorPicker("Set the background color", selection: $Color("blueiMars"), supportsOpacity: false)
+//        VStack {
+//                           ColorPicker("Set the background color", selection: $Color("blueiMars"), supportsOpacity: false)
                        }
-                       .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.blue)
+//                       .frame(maxWidth: .infinity, maxHeight: .infinity)
+//        .background(.blue)
     }
-}
+//}
 
 struct Colorpicker_Previews: PreviewProvider {
     static var previews: some View {
