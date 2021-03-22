@@ -16,16 +16,18 @@ struct VideoDetail: View {
             VideoPlayer(player: AVPlayer(url:  URL(string: video.source)!)) {
                 VStack {
                     Text(video.titel)
-                        .font(.title)
-                        .foregroundColor(.black)
-                        .background(Color.white.opacity(0.7))
+                        .font(Font.custom("Andale Mono", size: 25))
+                        .foregroundColor(Color("blueiMars"))
                     Spacer()
                 }
             }
             Text(video.date)
-                .foregroundColor(Color.white)
+                .foregroundColor(Color("rediMars"))
                 .multilineTextAlignment(.leading)
             Text(video.description)
+                .font(Font.custom("SF-Compact", size: 18))
+                .foregroundColor(Color("whiteiMars"))
+                .padding(.horizontal)
         }
     }
 }
