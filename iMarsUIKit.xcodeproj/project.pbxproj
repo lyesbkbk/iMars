@@ -28,6 +28,7 @@
 		C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13616132607EF3B00AB42A9 /* VideoData.swift */; };
 		C13616172607F04E00AB42A9 /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13616162607F04E00AB42A9 /* VideoDetail.swift */; };
 		C136161A2607F0D800AB42A9 /* VideoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13616192607F0D800AB42A9 /* VideoGrid.swift */; };
+		C1AA4E512608A282004802AB /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1AA4E502608A282004802AB /* Andale Mono.ttf */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
@@ -57,6 +58,7 @@
 		C13616132607EF3B00AB42A9 /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
 		C13616162607F04E00AB42A9 /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
 		C13616192607F0D800AB42A9 /* VideoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGrid.swift; sourceTree = "<group>"; };
+		C1AA4E502608A282004802AB /* Andale Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andale Mono.ttf"; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		059BFBE526034CF000F6970F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				C1AA4E502608A282004802AB /* Andale Mono.ttf */,
 				059BFBE626034CF000F6970F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -269,6 +272,7 @@
 				A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */,
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
+				C1AA4E512608A282004802AB /* Andale Mono.ttf in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
