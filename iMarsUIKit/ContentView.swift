@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Sidebar()
-//            MarsScreen()
         }
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
 }
 

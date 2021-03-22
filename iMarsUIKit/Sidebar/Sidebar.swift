@@ -24,21 +24,28 @@ struct SidebarHeader: View {
 struct SidebarNavigationLink: View {
     let destination: AnyView
     let tag: Menu
-    let selection: Binding<Menu?>
+    @Binding var selection: Menu?
     let imageLabel: String
     let textLabel: String
     
     var body: some View {
         NavigationLink(
             destination: destination,
-            tag: Menu.mars,
-            selection: selection,
+            tag: tag,
+            selection: $selection,
             label: {
                 Image(systemName: "\(imageLabel)")
+                    .foregroundColor(selection == tag ? Color.white : Color(UIColor(named: "blueiMars")!))
                 Text("\(textLabel)")
                 
             }
         )
+        .foregroundColor(selection == tag ? Color.white : Color.black)
+        .background(Rectangle()
+                        .fill(selection == tag ? Color(UIColor(named: "rediMars")!) : Color.clear)
+                        .cornerRadius(7)
+                        .padding(.leading, -10)
+                        .frame(width: 280, height: 45), alignment: .leading)
     }
 }
 
@@ -49,117 +56,86 @@ struct Sidebar: View {
     @State private var selection: Menu? = Menu.mars
     
     var body: some View {
-        List {
-//            Section(header: SidebarHeader(title: "Mars")) {
-//                NavigationLink(
-//                    destination: MarsScreen(),
-//                    tag: Menu.mars,
-//                    selection: $selection,
-//                    label: {
-//                        Image(systemName: "map")
-//                        Text("Mars")
-//
-//                    }
-//                )
-//                .foregroundColor(self.selection == Menu.mars ? Color.white : Color.black)
-//                .background(self.selection == Menu.mars ? Rectangle().fill(Color(UIColor(named: "sideItemSelected")!)) : Rectangle().fill(Color.clear))
-//            }
-            
-            SidebarNavigationLink(destination: MarsScreen(), tag: Menu.mars, selection: self.selection, imageLabel: "map", textLabel: "Mars")
-            
-            Section(header: SidebarHeader(title: "Library")) {
-                NavigationLink(
-                    destination: Text("Tag 2"),
-                    tag: Menu.libAll,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "server.rack")
-                        Text("All")
-                    }
-                )
-                NavigationLink(
-                    destination: Text("Tag 3"),
-                    tag: Menu.photos,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "photo.fill.on.rectangle.fill")
-                        Text("Photos")
-                    }
-                )
-                NavigationLink(
-                    destination: Text("Tag 4"),
-                    tag: Menu.videos,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "video.fill")
-                        Text("Videos")
-                    }
-                )
-                NavigationLink(
-                    destination: Text("Tag 5"),
-                    tag: Menu.articles,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "newspaper.fill")
-                        Text("Articles")
-                    }
-                )
+        NavigationView {
+            List {
+                Section(header: SidebarHeader(title: "Mars")) {
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.mars,
+                                          selection: self.$selection,
+                                          imageLabel: "map",
+                                          textLabel: "Mars"
+                    )
+                }
+                
+                Section(header: SidebarHeader(title: "Library")) {
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.libAll,
+                                          selection: self.$selection,
+                                          imageLabel: "server.rack",
+                                          textLabel: "All"
+                    )
+                    SidebarNavigationLink(destination: AnyView(PhotoView()),
+                                          tag: Menu.photos,
+                                          selection: self.$selection,
+                                          imageLabel: "photo.fill.on.rectangle.fill",
+                                          textLabel: "Photos"
+                    )
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.videos,
+                                          selection: self.$selection,
+                                          imageLabel: "video.fill",
+                                          textLabel: "Videos"
+                    )
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.articles,
+                                          selection: self.$selection,
+                                          imageLabel: "newspaper.fill",
+                                          textLabel: "Articles"
+                    )
+                }
+                
+                
+                Section(header: SidebarHeader(title: "3D Models")) {
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.dAll,
+                                          selection: self.$selection,
+                                          imageLabel: "server.rack",
+                                          textLabel: "All"
+                    )
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.dMars,
+                                          selection: self.$selection,
+                                          imageLabel: "photo.fill.on.rectangle.fill",
+                                          textLabel: "Mars"
+                    )
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.rovers,
+                                          selection: self.$selection,
+                                          imageLabel: "video.fill",
+                                          textLabel: "Rovers"
+                    )
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.sondes,
+                                          selection: self.$selection,
+                                          imageLabel: "newspaper.fill",
+                                          textLabel: "Sondes"
+                    )
+                }
+                
+                Section(header: SidebarHeader(title: "Saved")) {
+                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                                          tag: Menu.saved,
+                                          selection: self.$selection,
+                                          imageLabel: "square.and.arrow.down",
+                                          textLabel: "Saved"
+                    )
+                }
             }
-            
-            
-            Section(header: SidebarHeader(title: "3D Models")) {
-                NavigationLink(
-                    destination: Text("Tag 6"),
-                    tag: Menu.dAll,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "server.rack")
-                        Text("All")
-                    }
-                )
-                NavigationLink(
-                    destination: Text("Tag 7"),
-                    tag: Menu.dMars,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "photo.fill.on.rectangle.fill")
-                        Text("Mars")
-                    }
-                )
-                NavigationLink(
-                    destination: Text("Tag 8"),
-                    tag: Menu.rovers,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "video.fill")
-                        Text("Rovers")
-                    }
-                )
-                NavigationLink(
-                    destination: Text("Tag 9"),
-                    tag: Menu.sondes,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "newspaper.fill")
-                        Text("Sondes")
-                    }
-                )
-            }
-            
-            Section(header: SidebarHeader(title: "Saved")) {
-                NavigationLink(
-                    destination: Text("Tag 10"),
-                    tag: Menu.saved,
-                    selection: $selection,
-                    label: {
-                        Image(systemName: "square.and.arrow.down")
-                        Text("Saved")
-                    }
-                )
-            }
+            .listStyle(SidebarListStyle())
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .listStyle(SidebarListStyle())
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
+        
     }
 }
 
