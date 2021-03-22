@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct DetailViewArticle: View {
     let article: Article
     var body: some View {
@@ -34,16 +35,13 @@ struct DetailViewArticle: View {
             }
             
             
-            Text(article.titre)
-               
-      
+              Text(article.titre)
                 .fontWeight(.medium)
                 .foregroundColor(Color("blueiMars"))
                 .multilineTextAlignment(.center)
-
                 .font(.custom("SF Compact", size: 30))
 
-                Text(article.contenu)
+              Text(article.contenu)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     .font(.custom("SF Compact", size: 17))
 
