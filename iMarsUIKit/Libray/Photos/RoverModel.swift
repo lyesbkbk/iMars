@@ -9,7 +9,7 @@ import Foundation
 
 struct RoverAPI {
     static func fetch(completionHandler: @escaping ((RoverRoot) -> Void)) {
-        let url = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=15")!
+        let url = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=4vkYCyclqRrpiWi0R9aBWcXrx37ECRIfnIQ1YeAj&sol=15")!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data, error == nil {
                 let decoder = JSONDecoder()

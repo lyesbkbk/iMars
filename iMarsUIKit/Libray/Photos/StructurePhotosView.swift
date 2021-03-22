@@ -22,8 +22,9 @@ struct StructurePhotosView: View {
                             if let url = URL(string: item.img_src) {
                                 KFImage(url)
                                     .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                    .aspectRatio(contentMode: .fill)
                                     .frame(width: 200, height: 200)
+                                    .clipped()
                             }
                         }
                         

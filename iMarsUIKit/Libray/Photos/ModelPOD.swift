@@ -9,7 +9,7 @@ import Foundation
 
 struct PodAPI {
     static func fetch(completionHandler: @escaping ((PODData) -> Void)) {
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")!
+        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=4vkYCyclqRrpiWi0R9aBWcXrx37ECRIfnIQ1YeAj")!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data, error == nil {
                 let decoder = JSONDecoder()
