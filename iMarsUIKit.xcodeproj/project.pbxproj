@@ -20,6 +20,9 @@
 		22462F1A26090D8800205F0E /* Marswidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1626090D8500205F0E /* Marswidget.intentdefinition */; };
 		22462F1B26090D8800205F0E /* Marswidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1626090D8500205F0E /* Marswidget.intentdefinition */; };
 		22462F1E26090D8800205F0E /* MarswidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22462F0D26090D8500205F0E /* MarswidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		225F5DD6260A20B000FB6A27 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F5DD5260A20B000FB6A27 /* WidgetView.swift */; };
+		225F5DD9260A21E100FB6A27 /* DataPOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8EE2608909C00930561 /* DataPOD.swift */; };
+		225F5DDC260A21E800FB6A27 /* ModelPOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8EB26088A1A00930561 /* ModelPOD.swift */; };
 		22E6B88826038B8E00930561 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B88726038B8E00930561 /* SidebarView.swift */; };
 		22E6B88E26038BA400930561 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B88D26038BA400930561 /* MapView.swift */; };
 		22E6B89126038BAE00930561 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89026038BAE00930561 /* SavedView.swift */; };
@@ -82,6 +85,7 @@
 		22462F1626090D8500205F0E /* Marswidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Marswidget.intentdefinition; sourceTree = "<group>"; };
 		22462F1726090D8800205F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22462F1926090D8800205F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225F5DD5260A20B000FB6A27 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 		22E6B88726038B8E00930561 /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		22E6B88D26038BA400930561 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		22E6B89026038BAE00930561 /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				22462F1626090D8500205F0E /* Marswidget.intentdefinition */,
 				22462F1726090D8800205F0E /* Assets.xcassets */,
 				22462F1926090D8800205F0E /* Info.plist */,
+				225F5DD5260A20B000FB6A27 /* WidgetView.swift */,
 			);
 			path = Marswidget;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225F5DD6260A20B000FB6A27 /* WidgetView.swift in Sources */,
 				22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */,
 				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
 				22E6B88826038B8E00930561 /* SidebarView.swift in Sources */,
@@ -406,7 +412,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22462F1526090D8500205F0E /* Marswidget.swift in Sources */,
+				225F5DDC260A21E800FB6A27 /* ModelPOD.swift in Sources */,
 				22462F1A26090D8800205F0E /* Marswidget.intentdefinition in Sources */,
+				225F5DD9260A21E100FB6A27 /* DataPOD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
