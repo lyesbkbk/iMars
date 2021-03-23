@@ -54,9 +54,15 @@
 		22E6B8F926089D6500930561 /* RoverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8F826089D6500930561 /* RoverData.swift */; };
 		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
 		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
+		C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13616132607EF3B00AB42A9 /* VideoData.swift */; };
+		C13616172607F04E00AB42A9 /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13616162607F04E00AB42A9 /* VideoDetail.swift */; };
+		C136161A2607F0D800AB42A9 /* VideoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13616192607F0D800AB42A9 /* VideoGrid.swift */; };
+		C1AA4E512608A282004802AB /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1AA4E502608A282004802AB /* Andale Mono.ttf */; };
+		C1AA4E542608A6C6004802AB /* SF-Compact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1AA4E532608A6C6004802AB /* SF-Compact.ttf */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
+		F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BAF60260368FF0037B247 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,9 +135,15 @@
 		22E6B8F826089D6500930561 /* RoverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverData.swift; sourceTree = "<group>"; };
 		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
 		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
+		C13616132607EF3B00AB42A9 /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
+		C13616162607F04E00AB42A9 /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
+		C13616192607F0D800AB42A9 /* VideoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGrid.swift; sourceTree = "<group>"; };
+		C1AA4E502608A282004802AB /* Andale Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andale Mono.ttf"; sourceTree = "<group>"; };
+		C1AA4E532608A6C6004802AB /* SF-Compact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact.ttf"; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
+		F95BAF60260368FF0037B247 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +251,8 @@
 		059BFBE526034CF000F6970F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				C1AA4E532608A6C6004802AB /* SF-Compact.ttf */,
+				C1AA4E502608A282004802AB /* Andale Mono.ttf */,
 				059BFBE626034CF000F6970F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -268,10 +282,10 @@
 		22E6B8A026038BFE00930561 /* Libray */ = {
 			isa = PBXGroup;
 			children = (
+				C136161C2607F1E800AB42A9 /* Videos */,
 				22E6B8AF2603961000930561 /* Photos */,
 				22E6B89726038BF800930561 /* AllView.swift */,
 				22E6B89926038BF800930561 /* ArticlesView.swift */,
-				22E6B89826038BF800930561 /* VideoView.swift */,
 			);
 			path = Libray;
 			sourceTree = "<group>";
@@ -329,6 +343,18 @@
 				A9D4766526035D2100D9E910 /* Mars_3D.usdz */,
 			);
 			name = "Object 3D";
+			sourceTree = "<group>";
+		};
+		C136161C2607F1E800AB42A9 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				F95BAF60260368FF0037B247 /* VideoModel.swift */,
+				C13616132607EF3B00AB42A9 /* VideoData.swift */,
+				22E6B89826038BF800930561 /* VideoView.swift */,
+				C13616162607F04E00AB42A9 /* VideoDetail.swift */,
+				C13616192607F0D800AB42A9 /* VideoGrid.swift */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		D36B0A02260352330072D750 /* BibliLaura */ = {
@@ -433,6 +459,8 @@
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059426C72604DEAB003E05CB /* Phobos.usdz in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
+				C1AA4E542608A6C6004802AB /* SF-Compact.ttf in Resources */,
+				C1AA4E512608A282004802AB /* Andale Mono.ttf in Resources */,
 				059426C22604DEAB003E05CB /* MRO.usdz in Resources */,
 				059426C32604DEAB003E05CB /* Ingenuity.usdz in Resources */,
 				050E3C4326039DC500D646D6 /* Mars.usdz in Resources */,
@@ -470,10 +498,14 @@
 				059BFC022603519800F6970F /* Model3DView.swift in Sources */,
 				22E6B88826038B8E00930561 /* SidebarView.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
+				C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */,
 				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
+				F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
+				C13616172607F04E00AB42A9 /* VideoDetail.swift in Sources */,
+				C136161A2607F0D800AB42A9 /* VideoGrid.swift in Sources */,
 				22E6B8EF2608909C00930561 /* DataPOD.swift in Sources */,
 				22462F1B26090D8800205F0E /* Marswidget.intentdefinition in Sources */,
 				22E6B89126038BAE00930561 /* SavedView.swift in Sources */,
