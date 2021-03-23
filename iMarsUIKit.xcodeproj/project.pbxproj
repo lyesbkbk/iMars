@@ -43,6 +43,11 @@
 		22E6B89C26038BF800930561 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89826038BF800930561 /* VideoView.swift */; };
 		22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89926038BF800930561 /* ArticlesView.swift */; };
 		22E6B8D92603D45F00930561 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 22E6B8D82603D45F00930561 /* Kingfisher */; };
+		A912EA262609DCDA00B1D718 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912EA252609DCDA00B1D718 /* WeatherView.swift */; };
+		A9CA9F2A2607A9C8008491AF /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA9F292607A9C8008491AF /* Sidebar.swift */; };
+		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
+		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
+		A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E4162604E822005E45A7 /* ContentView.swift */; };
 		22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8DB2604A02200930561 /* StructurePhotosView.swift */; };
 		22E6B8E02604A22000930561 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 22E6B8DF2604A22000930561 /* WaterfallGrid */; };
 		22E6B8E32604B33F00930561 /* DetailsPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8E22604B33E00930561 /* DetailsPhotosView.swift */; };
@@ -126,6 +131,12 @@
 		22E6B89726038BF800930561 /* AllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllView.swift; sourceTree = "<group>"; };
 		22E6B89826038BF800930561 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		22E6B89926038BF800930561 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		22E6B8CB2603B44200930561 /* PhotoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModels.swift; sourceTree = "<group>"; };
+		22E6B8D02603D10400930561 /* PhotoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPI.swift; sourceTree = "<group>"; };
+		A912EA252609DCDA00B1D718 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		A9CA9F292607A9C8008491AF /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
+		A9E8E4162604E822005E45A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22E6B8DB2604A02200930561 /* StructurePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructurePhotosView.swift; sourceTree = "<group>"; };
 		22E6B8E22604B33E00930561 /* DetailsPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotosView.swift; sourceTree = "<group>"; };
 		22E6B8E82604EA2100930561 /* PODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODView.swift; sourceTree = "<group>"; };
@@ -134,7 +145,6 @@
 		22E6B8F226089D3400930561 /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
 		22E6B8F826089D6500930561 /* RoverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverData.swift; sourceTree = "<group>"; };
 		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
-		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
 		C13616132607EF3B00AB42A9 /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
 		C13616162607F04E00AB42A9 /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
 		C13616192607F0D800AB42A9 /* VideoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGrid.swift; sourceTree = "<group>"; };
@@ -243,6 +253,7 @@
 				059BFBEB26034CF000F6970F /* Info.plist */,
 				D36B0A02260352330072D750 /* BibliLaura */,
 				059BFBE526034CF000F6970F /* Preview Content */,
+				A9E8E4162604E822005E45A7 /* ContentView.swift */,
 			);
 			path = iMarsUIKit;
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				22E6B88726038B8E00930561 /* SidebarView.swift */,
+				A9CA9F292607A9C8008491AF /* Sidebar.swift */,
 			);
 			path = Sidebar;
 			sourceTree = "<group>";
@@ -331,6 +343,7 @@
 			children = (
 				A9D4766826035D3200D9E910 /* Object 3D */,
 				A9D4766926035DA000D9E910 /* MarsScreen.swift */,
+				A912EA252609DCDA00B1D718 /* WeatherView.swift */,
 			);
 			name = "Main Screen";
 			sourceTree = "<group>";
@@ -517,6 +530,9 @@
 				C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */,
 				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
+				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
+				A912EA262609DCDA00B1D718 /* WeatherView.swift in Sources */,
+				D36B0A1D2604F3770072D750 /* Colorpicker.swift in Sources */,
 				D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */,
 				F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
@@ -525,6 +541,7 @@
 				22E6B8EF2608909C00930561 /* DataPOD.swift in Sources */,
 				22462F1B26090D8800205F0E /* Marswidget.intentdefinition in Sources */,
 				22E6B89126038BAE00930561 /* SavedView.swift in Sources */,
+				A9CA9F2A2607A9C8008491AF /* Sidebar.swift in Sources */,
 				22E6B89C26038BF800930561 /* VideoView.swift in Sources */,
 				225F5E03260A4A7F00FB6A27 /* Preview.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
@@ -532,6 +549,8 @@
 				22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */,
 				22E6B89A26038BF800930561 /* AllView.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
+				A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */,
+				22E6B8D12603D10400930561 /* PhotoAPI.swift in Sources */,
 				22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */,
 				22E6B8E92604EA2100930561 /* PODView.swift in Sources */,
 				22E6B8F326089D3400930561 /* RoverModel.swift in Sources */,
@@ -704,7 +723,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = KevinM.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -727,7 +746,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = KevinM.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
