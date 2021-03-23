@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050E3C4326039DC500D646D6 /* Mars.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 050E3C4226039DC500D646D6 /* Mars.usdz */; };
+		059426B52604DDD2003E05CB /* Curiosity.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B42604DDD2003E05CB /* Curiosity.usdz */; };
+		059426C02604DEAB003E05CB /* Perseverance.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B72604DEA9003E05CB /* Perseverance.usdz */; };
+		059426C12604DEAB003E05CB /* Deimos.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B82604DEA9003E05CB /* Deimos.usdz */; };
+		059426C22604DEAB003E05CB /* MRO.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B92604DEA9003E05CB /* MRO.usdz */; };
+		059426C32604DEAB003E05CB /* Ingenuity.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BA2604DEAA003E05CB /* Ingenuity.usdz */; };
+		059426C42604DEAB003E05CB /* MER.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BB2604DEAA003E05CB /* MER.usdz */; };
+		059426C52604DEAB003E05CB /* InSight.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BC2604DEAA003E05CB /* InSight.usdz */; };
+		059426C62604DEAB003E05CB /* Odyssey.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BD2604DEAB003E05CB /* Odyssey.usdz */; };
+		059426C72604DEAB003E05CB /* Phobos.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BE2604DEAB003E05CB /* Phobos.usdz */; };
+		059426C82604DEAB003E05CB /* Maven.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426BF2604DEAB003E05CB /* Maven.usdz */; };
 		059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBDD26034CEE00F6970F /* AppDelegate.swift */; };
 		059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBDF26034CEE00F6970F /* SceneDelegate.swift */; };
 		059BFBE426034CF000F6970F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE326034CF000F6970F /* Assets.xcassets */; };
 		059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE626034CF000F6970F /* Preview Assets.xcassets */; };
 		059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE826034CF000F6970F /* LaunchScreen.storyboard */; };
 		059BFBF526034E3200F6970F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBF426034E3200F6970F /* Preview.swift */; };
+		059BFC022603519800F6970F /* Model3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBFF2603519800F6970F /* Model3DView.swift */; };
+		059BFC032603519800F6970F /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFC002603519800F6970F /* Model3D.swift */; };
+		059BFC042603519800F6970F /* Model3DRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFC012603519800F6970F /* Model3DRaw.swift */; };
 		22462F1026090D8500205F0E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F0F26090D8500205F0E /* WidgetKit.framework */; };
 		22462F1226090D8500205F0E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F1126090D8500205F0E /* SwiftUI.framework */; };
 		22462F1526090D8500205F0E /* Marswidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1426090D8500205F0E /* Marswidget.swift */; };
@@ -70,6 +84,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		050E3C4226039DC500D646D6 /* Mars.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars.usdz; sourceTree = "<group>"; };
+		059426B42604DDD2003E05CB /* Curiosity.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Curiosity.usdz; sourceTree = "<group>"; };
+		059426B72604DEA9003E05CB /* Perseverance.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Perseverance.usdz; sourceTree = "<group>"; };
+		059426B82604DEA9003E05CB /* Deimos.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Deimos.usdz; sourceTree = "<group>"; };
+		059426B92604DEA9003E05CB /* MRO.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = MRO.usdz; sourceTree = "<group>"; };
+		059426BA2604DEAA003E05CB /* Ingenuity.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Ingenuity.usdz; sourceTree = "<group>"; };
+		059426BB2604DEAA003E05CB /* MER.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = MER.usdz; sourceTree = "<group>"; };
+		059426BC2604DEAA003E05CB /* InSight.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = InSight.usdz; sourceTree = "<group>"; };
+		059426BD2604DEAB003E05CB /* Odyssey.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Odyssey.usdz; sourceTree = "<group>"; };
+		059426BE2604DEAB003E05CB /* Phobos.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Phobos.usdz; sourceTree = "<group>"; };
+		059426BF2604DEAB003E05CB /* Maven.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Maven.usdz; sourceTree = "<group>"; };
 		059BFBDA26034CEE00F6970F /* iMarsUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarsUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059BFBDD26034CEE00F6970F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		059BFBDF26034CEE00F6970F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +103,9 @@
 		059BFBE926034CF000F6970F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		059BFBEB26034CF000F6970F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		059BFBF426034E3200F6970F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		059BFBFF2603519800F6970F /* Model3DView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3DView.swift; sourceTree = "<group>"; };
+		059BFC002603519800F6970F /* Model3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
+		059BFC012603519800F6970F /* Model3DRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3DRaw.swift; sourceTree = "<group>"; };
 		22462F0D26090D8500205F0E /* MarswidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarswidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		22462F0F26090D8500205F0E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		22462F1126090D8500205F0E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -128,6 +156,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050E3C472603A90100D646D6 /* Model3D */ = {
+			isa = PBXGroup;
+			children = (
+				050E3C4226039DC500D646D6 /* Mars.usdz */,
+				059426B42604DDD2003E05CB /* Curiosity.usdz */,
+				059426B82604DEA9003E05CB /* Deimos.usdz */,
+				059426BA2604DEAA003E05CB /* Ingenuity.usdz */,
+				059426BC2604DEAA003E05CB /* InSight.usdz */,
+				059426BF2604DEAB003E05CB /* Maven.usdz */,
+				059426BB2604DEAA003E05CB /* MER.usdz */,
+				059426B92604DEA9003E05CB /* MRO.usdz */,
+				059426BD2604DEAB003E05CB /* Odyssey.usdz */,
+				059426B72604DEA9003E05CB /* Perseverance.usdz */,
+				059426BE2604DEAB003E05CB /* Phobos.usdz */,
+			);
+			path = Model3D;
+			sourceTree = "<group>";
+		};
+		050E3C482603A92400D646D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				059BFBDD26034CEE00F6970F /* AppDelegate.swift */,
+				059BFBF426034E3200F6970F /* Preview.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		050E3C4A2603A93400D646D6 /* Model3DView */ = {
+			isa = PBXGroup;
+			children = (
+				059BFC002603519800F6970F /* Model3D.swift */,
+				059BFC012603519800F6970F /* Model3DRaw.swift */,
+				059BFBFF2603519800F6970F /* Model3DView.swift */,
+			);
+			path = Model3DView;
+			sourceTree = "<group>";
+		};
 		059BFBD126034CEE00F6970F = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +215,10 @@
 		059BFBDC26034CEE00F6970F /* iMarsUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				050E3C472603A90100D646D6 /* Model3D */,
+				050E3C482603A92400D646D6 /* Main */,
+				050E3C4A2603A93400D646D6 /* Model3DView */,
+				059BFBE126034CEE00F6970F /* ContentView.swift */,
 				22E6B8A226038C1600930561 /* Sidebar */,
 				22E6B8A426038C2300930561 /* Saved */,
 				22E6B8A326038C1B00930561 /* Map */,
@@ -362,8 +431,19 @@
 			files = (
 				A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */,
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
+				059426C72604DEAB003E05CB /* Phobos.usdz in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
+				059426C22604DEAB003E05CB /* MRO.usdz in Resources */,
+				059426C32604DEAB003E05CB /* Ingenuity.usdz in Resources */,
+				050E3C4326039DC500D646D6 /* Mars.usdz in Resources */,
+				059426C02604DEAB003E05CB /* Perseverance.usdz in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
+				059426C52604DEAB003E05CB /* InSight.usdz in Resources */,
+				059426C62604DEAB003E05CB /* Odyssey.usdz in Resources */,
+				059426B52604DDD2003E05CB /* Curiosity.usdz in Resources */,
+				059426C42604DEAB003E05CB /* MER.usdz in Resources */,
+				059426C12604DEAB003E05CB /* Deimos.usdz in Resources */,
+				059426C82604DEAB003E05CB /* Maven.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +465,9 @@
 				225F5DD6260A20B000FB6A27 /* WidgetView.swift in Sources */,
 				22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */,
 				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
+				059BFC042603519800F6970F /* Model3DRaw.swift in Sources */,
+				059BFC032603519800F6970F /* Model3D.swift in Sources */,
+				059BFC022603519800F6970F /* Model3DView.swift in Sources */,
 				22E6B88826038B8E00930561 /* SidebarView.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
@@ -564,8 +647,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
+				DEVELOPMENT_TEAM = GF2287775D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,7 +658,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -585,8 +670,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
+				DEVELOPMENT_TEAM = GF2287775D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,7 +681,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
