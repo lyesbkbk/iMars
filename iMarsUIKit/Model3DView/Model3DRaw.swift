@@ -26,6 +26,7 @@ struct Model3DRaw: View {
                 }.padding(.top)
             }
         }.cornerRadius(20)
+        .frame(maxWidth : 150)
         }
     }
 
