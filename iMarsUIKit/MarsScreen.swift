@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 import SceneKit
-
+import SpriteKit
 
 struct MarsScreen: View {
     
@@ -21,6 +21,9 @@ struct MarsScreen: View {
         return nil
     }()
     
+//    let sceneView: SceneView? = SceneView(scene: scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
+    
+    
     // If true : Change icon button
     @State var unseeMode: Bool = false
     
@@ -30,11 +33,12 @@ struct MarsScreen: View {
     var body: some View {
         ZStack {
             SceneView(scene: scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
+                .ignoresSafeArea(.all)
             HStack {
                 Spacer()
                 VStack {
                     WeatherView(planet: "Mars", temperatures: "-97 / -4", pression: "857", gravity: "3.71", objDef: "Objets martiens", color: Color(UIColor(named: "rediMars")!))
-                    WeatherView(planet: "Terre", temperatures: "-45 / 52", pression: "1013", gravity: "9.80", objDef: "Objets terriens", color: Color(UIColor(named: "blueiMars")!))
+                    WeatherView(planet: "Terre", temperatures: "-45 / +52", pression: "1013", gravity: "9.80", objDef: "Objets terriens", color: Color(UIColor(named: "blueiMars")!))
                 }
                 .offset(x: -20)
                 .opacity(self.unseeMode == false ? 1 : 0)
