@@ -7,12 +7,7 @@
 import SwiftUI
 import Foundation
 
-extension Color {
-    static let colorBlue = Color("blueImars")
-    static let colorRed = Color("redImars")
-    static let colorBlack = Color("blackImars")
-    static let colorWhite = Color("whiteImars")
-}
+
 
 struct Data : Identifiable{
     var id = UUID()

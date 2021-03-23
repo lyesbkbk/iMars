@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+////////////
+//LISTE A FAIRE//
+/////////////////
 
 struct DetailViewArticle: View {
     let article: Article

@@ -7,6 +7,13 @@
 import Foundation
 import SwiftUI
 
+extension Color {
+    static let colorBlue = Color("blueImars")
+    static let colorRed = Color("redImars")
+    static let colorBlack = Color("blackImars")
+    static let colorWhite = Color("whiteImars")
+}
+
 struct Landscape<Content>: View where Content: View {
     let content: () -> Content
     let height = UIScreen.main.bounds.width

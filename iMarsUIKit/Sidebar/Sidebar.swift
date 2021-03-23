@@ -80,13 +80,13 @@ struct Sidebar: View {
                                           imageLabel: "photo.fill.on.rectangle.fill",
                                           textLabel: "Photos"
                     )
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                    SidebarNavigationLink(destination: AnyView(VideoGrid(video: Video.data)),
                                           tag: Menu.videos,
                                           selection: self.$selection,
                                           imageLabel: "video.fill",
                                           textLabel: "Videos"
                     )
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                    SidebarNavigationLink(destination: AnyView(ArticleList()),
                                           tag: Menu.articles,
                                           selection: self.$selection,
                                           imageLabel: "newspaper.fill",
@@ -96,34 +96,34 @@ struct Sidebar: View {
                 
                 
                 Section(header: SidebarHeader(title: "3D Models")) {
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                    SidebarNavigationLink(destination: AnyView(Model3DView(item: Model3D.model[0])),
                                           tag: Menu.dAll,
                                           selection: self.$selection,
                                           imageLabel: "server.rack",
                                           textLabel: "All"
                     )
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
-                                          tag: Menu.dMars,
-                                          selection: self.$selection,
-                                          imageLabel: "photo.fill.on.rectangle.fill",
-                                          textLabel: "Mars"
-                    )
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
-                                          tag: Menu.rovers,
-                                          selection: self.$selection,
-                                          imageLabel: "video.fill",
-                                          textLabel: "Rovers"
-                    )
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
-                                          tag: Menu.sondes,
-                                          selection: self.$selection,
-                                          imageLabel: "newspaper.fill",
-                                          textLabel: "Sondes"
-                    )
+//                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+//                                          tag: Menu.dMars,
+//                                          selection: self.$selection,
+//                                          imageLabel: "photo.fill.on.rectangle.fill",
+//                                          textLabel: "Mars"
+//                    )
+//                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+//                                          tag: Menu.rovers,
+//                                          selection: self.$selection,
+//                                          imageLabel: "video.fill",
+//                                          textLabel: "Rovers"
+//                    )
+//                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+//                                          tag: Menu.sondes,
+//                                          selection: self.$selection,
+//                                          imageLabel: "newspaper.fill",
+//                                          textLabel: "Sondes"
+//                    )
                 }
                 
                 Section(header: SidebarHeader(title: "Saved")) {
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                    SidebarNavigationLink(destination: AnyView(SavedView()),
                                           tag: Menu.saved,
                                           selection: self.$selection,
                                           imageLabel: "square.and.arrow.down",
