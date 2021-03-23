@@ -8,9 +8,11 @@
 import SwiftUI
 enum SidearLibraryItems: String, CaseIterable {
     case all = "All"
+    case pod = "Photo of the day"
     case photos = "Photos"
     case videos = "Video"
     case articles = "Articles"
+    
     
     func systemName() -> String {
         switch self{
@@ -22,6 +24,9 @@ enum SidearLibraryItems: String, CaseIterable {
             return "video.fill"
         case.articles:
             return "newspaper.fill"
+        case.pod :
+            return "calendar"
+            
         }
        
     }
@@ -29,13 +34,15 @@ enum SidearLibraryItems: String, CaseIterable {
     func view() -> AnyView {
         switch self {
         case .all:
-            return AnyView(AllView())
+            return AnyView(PodView())
         case .photos:
-            return AnyView(PhotoView())
+            return AnyView(StructurePhotosView())
         case .videos:
             return AnyView(VideoView())
         case .articles:
             return AnyView(ArticlesView())
+        case .pod:
+            return AnyView(PodView())
         }
     }
 }
@@ -61,7 +68,7 @@ enum Sidbar3Dlibrary: String, CaseIterable {
     }
     
     func view() -> AnyView {
-        return AnyView(PhotoView())
+        return AnyView(MapView())
     }
 }
 
