@@ -33,37 +33,17 @@ struct MarsScreen: View {
             HStack {
                 Spacer()
                 VStack {
-                    VStack {
-                        Text("Mars\n")
-                            .bold()
-                            .font(.title2)
-                            .foregroundColor(Color(UIColor(named: "rediMars")!))
-                            + Text("Températures °C\n*insert data*\nPression PA\n*insert data*\nGravité m/s²\n*insert data*\nO\nObjets martiens\n")
-                    }
-                    .padding()
-                    .multilineTextAlignment(.trailing)
-                    .background(Color.black .opacity(0.5))
-                    .cornerRadius(10)
-                    VStack {
-                        Text("Terre\n")
-                            .bold()
-                            .font(.title2)
-                            .foregroundColor(Color(UIColor(named: "blueiMars")!))
-                            + Text("Températures °C\n*insert data*\nPression PA\n*insert data*\nGravité m/s²\n*insert data*\nO\nObjets terrestres\n")
-                    }
-                    .padding()
-                    .multilineTextAlignment(.trailing)
-                    .background(Color.black .opacity(0.5))
-                    .cornerRadius(10)
+                    WeatherView(planet: "Mars", temperatures: "-97 / -4", pression: "857", gravity: "3.71", objDef: "Objets martiens", color: Color(UIColor(named: "rediMars")!))
+                    WeatherView(planet: "Terre", temperatures: "-45 / 52", pression: "1013", gravity: "9.80", objDef: "Objets terriens", color: Color(UIColor(named: "blueiMars")!))
                 }
                 .offset(x: -20)
+                .opacity(self.unseeMode == false ? 1 : 0)
             }
         }
         .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: Button(action: {
             self.unseeMode.toggle()
-            print("coucou")
         }, label: {
             Image(systemName: self.unseeMode == false ? "eye" : "eye.slash")
                 .foregroundColor(Color(UIColor(named: "rediMars")!))
