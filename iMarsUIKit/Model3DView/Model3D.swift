@@ -26,7 +26,7 @@ extension Model3D {
     Model3D(name: "Curiosity", fileName: "Curiosity.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "Deimos", fileName: "Deimos.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "Ingenuity", fileName: "Ingenuity.usdz", desc: "Description de curiosity", type: "Model3D"),
-    Model3D(name: "Insight", fileName: "Insight.usdz", desc: "Description de curiosity", type: "Model3D"),
+    Model3D(name: "InSight", fileName: "InSight.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "Maven", fileName: "Maven.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "MER", fileName: "MER.usdz", desc: "Description de curiosity", type: "Model3D"),
     Model3D(name: "MRO", fileName: "MRO.usdz", desc: "Description de curiosity", type: "Model3D"),
