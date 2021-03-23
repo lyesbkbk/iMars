@@ -62,7 +62,11 @@
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
+		D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A0C260367910072D750 /* DetailViewArticle.swift */; };
+		D36B0A12260368820072D750 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A11260368820072D750 /* ArticleModel.swift */; };
+		D36B0A1D2604F3770072D750 /* Colorpicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A1C2604F3770072D750 /* Colorpicker.swift */; };
 		F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BAF60260368FF0037B247 /* VideoModel.swift */; };
+    
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +147,11 @@
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
+		D36B0A0C260367910072D750 /* DetailViewArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewArticle.swift; sourceTree = "<group>"; };
+		D36B0A11260368820072D750 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		D36B0A1C2604F3770072D750 /* Colorpicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorpicker.swift; sourceTree = "<group>"; };
 		F95BAF60260368FF0037B247 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +247,7 @@
 				059BFBE326034CF000F6970F /* Assets.xcassets */,
 				059BFBE826034CF000F6970F /* LaunchScreen.storyboard */,
 				059BFBEB26034CF000F6970F /* Info.plist */,
+				D36B0A152604A84D0072D750 /* ARDraw */,
 				D36B0A02260352330072D750 /* BibliLaura */,
 				059BFBE526034CF000F6970F /* Preview Content */,
 			);
@@ -357,11 +366,37 @@
 		D36B0A02260352330072D750 /* BibliLaura */ = {
 			isa = PBXGroup;
 			children = (
+				D36B0A0F260368000072D750 /* BibliListe */,
+				D36B0A10260368130072D750 /* Article */,
+			);
+			name = BibliLaura;
+			sourceTree = "<group>";
+		};
+		D36B0A0F260368000072D750 /* BibliListe */ = {
+			isa = PBXGroup;
+			children = (
 				D36B0A04260352760072D750 /* BibliLauraModel.swift */,
 				D36B0A05260352770072D750 /* BibliLauraTag.swift */,
 				D36B0A03260352760072D750 /* BibliLauraView.swift */,
 			);
-			name = BibliLaura;
+			name = BibliListe;
+			sourceTree = "<group>";
+		};
+		D36B0A10260368130072D750 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				D36B0A0C260367910072D750 /* DetailViewArticle.swift */,
+				D36B0A11260368820072D750 /* ArticleModel.swift */,
+			);
+			name = Article;
+			sourceTree = "<group>";
+		};
+		D36B0A152604A84D0072D750 /* ARDraw */ = {
+			isa = PBXGroup;
+			children = (
+				D36B0A1C2604F3770072D750 /* Colorpicker.swift */,
+			);
+			name = ARDraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +522,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
+				D36B0A12260368820072D750 /* ArticleModel.swift in Sources */,
 				225F5DD6260A20B000FB6A27 /* WidgetView.swift in Sources */,
 				22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */,
 				059BFC042603519800F6970F /* Model3DRaw.swift in Sources */,
@@ -498,6 +536,9 @@
 				C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */,
 				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
+				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
+				D36B0A1D2604F3770072D750 /* Colorpicker.swift in Sources */,
+				D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */,
 				F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				C13616172607F04E00AB42A9 /* VideoDetail.swift in Sources */,

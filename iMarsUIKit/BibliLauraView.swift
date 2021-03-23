@@ -18,14 +18,14 @@ struct BibliLauraView: View {
                 .cornerRadius(5.0)
             
             Text(data.title)
-//                .foregroundColor(.blueiMars)
-            
         }
     }
 }
 
 struct BibliLauraView_Previews: PreviewProvider {
     static var previews: some View {
-        BibliLauraView(data: Datas[1])
+        Landscape {
+            BibliLauraView(data: Datas[1])
+        }
     }
 }
