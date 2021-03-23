@@ -17,12 +17,17 @@
 		22E6B88E26038BA400930561 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B88D26038BA400930561 /* MapView.swift */; };
 		22E6B89126038BAE00930561 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89026038BAE00930561 /* SavedView.swift */; };
 		22E6B89A26038BF800930561 /* AllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89726038BF800930561 /* AllView.swift */; };
-		22E6B89B26038BF800930561 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89626038BF800930561 /* PhotoView.swift */; };
 		22E6B89C26038BF800930561 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89826038BF800930561 /* VideoView.swift */; };
 		22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89926038BF800930561 /* ArticlesView.swift */; };
-		22E6B8CC2603B44200930561 /* PhotoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8CB2603B44200930561 /* PhotoModels.swift */; };
-		22E6B8D12603D10400930561 /* PhotoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8D02603D10400930561 /* PhotoAPI.swift */; };
 		22E6B8D92603D45F00930561 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 22E6B8D82603D45F00930561 /* Kingfisher */; };
+		22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8DB2604A02200930561 /* StructurePhotosView.swift */; };
+		22E6B8E02604A22000930561 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 22E6B8DF2604A22000930561 /* WaterfallGrid */; };
+		22E6B8E32604B33F00930561 /* DetailsPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8E22604B33E00930561 /* DetailsPhotosView.swift */; };
+		22E6B8E92604EA2100930561 /* PODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8E82604EA2100930561 /* PODView.swift */; };
+		22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8EB26088A1A00930561 /* ModelPOD.swift */; };
+		22E6B8EF2608909C00930561 /* DataPOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8EE2608909C00930561 /* DataPOD.swift */; };
+		22E6B8F326089D3400930561 /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8F226089D3400930561 /* RoverModel.swift */; };
+		22E6B8F926089D6500930561 /* RoverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8F826089D6500930561 /* RoverData.swift */; };
 		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
 		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
@@ -42,12 +47,16 @@
 		22E6B88726038B8E00930561 /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		22E6B88D26038BA400930561 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		22E6B89026038BAE00930561 /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
-		22E6B89626038BF800930561 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		22E6B89726038BF800930561 /* AllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllView.swift; sourceTree = "<group>"; };
 		22E6B89826038BF800930561 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		22E6B89926038BF800930561 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
-		22E6B8CB2603B44200930561 /* PhotoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModels.swift; sourceTree = "<group>"; };
-		22E6B8D02603D10400930561 /* PhotoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPI.swift; sourceTree = "<group>"; };
+		22E6B8DB2604A02200930561 /* StructurePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructurePhotosView.swift; sourceTree = "<group>"; };
+		22E6B8E22604B33E00930561 /* DetailsPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotosView.swift; sourceTree = "<group>"; };
+		22E6B8E82604EA2100930561 /* PODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODView.swift; sourceTree = "<group>"; };
+		22E6B8EB26088A1A00930561 /* ModelPOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPOD.swift; sourceTree = "<group>"; };
+		22E6B8EE2608909C00930561 /* DataPOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPOD.swift; sourceTree = "<group>"; };
+		22E6B8F226089D3400930561 /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
+		22E6B8F826089D6500930561 /* RoverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverData.swift; sourceTree = "<group>"; };
 		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
 		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E6B8D92603D45F00930561 /* Kingfisher in Frameworks */,
+				22E6B8E02604A22000930561 /* WaterfallGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +159,13 @@
 		22E6B8AF2603961000930561 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				22E6B89626038BF800930561 /* PhotoView.swift */,
-				22E6B8CB2603B44200930561 /* PhotoModels.swift */,
-				22E6B8D02603D10400930561 /* PhotoAPI.swift */,
+				22E6B8DB2604A02200930561 /* StructurePhotosView.swift */,
+				22E6B8E22604B33E00930561 /* DetailsPhotosView.swift */,
+				22E6B8F226089D3400930561 /* RoverModel.swift */,
+				22E6B8F826089D6500930561 /* RoverData.swift */,
+				22E6B8EB26088A1A00930561 /* ModelPOD.swift */,
+				22E6B8E82604EA2100930561 /* PODView.swift */,
+				22E6B8EE2608909C00930561 /* DataPOD.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 			name = iMarsUIKit;
 			packageProductDependencies = (
 				22E6B8D82603D45F00930561 /* Kingfisher */,
+				22E6B8DF2604A22000930561 /* WaterfallGrid */,
 			);
 			productName = iMarsUIKit;
 			productReference = 059BFBDA26034CEE00F6970F /* iMarsUIKit.app */;
@@ -231,6 +246,7 @@
 			mainGroup = 059BFBD126034CEE00F6970F;
 			packageReferences = (
 				22E6B8D72603D45F00930561 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				22E6B8DE2604A22000930561 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
 			);
 			productRefGroup = 059BFBDB26034CEE00F6970F /* Products */;
 			projectDirPath = "";
@@ -260,21 +276,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */,
 				059BFBDE26034CEE00F6970F /* AppDelegate.swift in Sources */,
-				22E6B89B26038BF800930561 /* PhotoView.swift in Sources */,
 				22E6B88826038B8E00930561 /* SidebarView.swift in Sources */,
-				22E6B8CC2603B44200930561 /* PhotoModels.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
+				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
+				22E6B8EF2608909C00930561 /* DataPOD.swift in Sources */,
 				22E6B89126038BAE00930561 /* SavedView.swift in Sources */,
 				22E6B89C26038BF800930561 /* VideoView.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
+				22E6B8E32604B33F00930561 /* DetailsPhotosView.swift in Sources */,
+				22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */,
 				22E6B89A26038BF800930561 /* AllView.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
-				22E6B8D12603D10400930561 /* PhotoAPI.swift in Sources */,
 				22E6B89D26038BF800930561 /* ArticlesView.swift in Sources */,
+				22E6B8E92604EA2100930561 /* PODView.swift in Sources */,
+				22E6B8F326089D3400930561 /* RoverModel.swift in Sources */,
 				A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +501,14 @@
 				minimumVersion = 6.2.1;
 			};
 		};
+		22E6B8DE2604A22000930561 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -488,6 +516,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22E6B8D72603D45F00930561 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		22E6B8DF2604A22000930561 /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22E6B8DE2604A22000930561 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
