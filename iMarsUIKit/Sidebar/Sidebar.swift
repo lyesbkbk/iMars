@@ -74,7 +74,7 @@ struct Sidebar: View {
                                           imageLabel: "server.rack",
                                           textLabel: "All"
                     )
-                    SidebarNavigationLink(destination: AnyView(PhotoView()),
+                    SidebarNavigationLink(destination: AnyView(StructurePhotosView()),
                                           tag: Menu.photos,
                                           selection: self.$selection,
                                           imageLabel: "photo.fill.on.rectangle.fill",
