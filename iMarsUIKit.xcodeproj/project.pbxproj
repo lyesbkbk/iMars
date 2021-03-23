@@ -25,6 +25,10 @@
 		22E6B8D92603D45F00930561 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 22E6B8D82603D45F00930561 /* Kingfisher */; };
 		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
 		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
+		C127EDDE260A4DCB0091B8BB /* MarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127EDDD260A4DCA0091B8BB /* MarsModel.swift */; };
+		C127EDE1260A4DFB0091B8BB /* PointsOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127EDE0260A4DFB0091B8BB /* PointsOfInterest.swift */; };
+		C127EDE4260A4E050091B8BB /* MarsInterest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C127EDE3260A4E050091B8BB /* MarsInterest.xcassets */; };
+		C127EDE7260A4E260091B8BB /* MarsInterestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127EDE6260A4E260091B8BB /* MarsInterestData.swift */; };
 		D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A03260352760072D750 /* BibliLauraView.swift */; };
 		D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A04260352760072D750 /* BibliLauraModel.swift */; };
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
@@ -50,6 +54,10 @@
 		22E6B8D02603D10400930561 /* PhotoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPI.swift; sourceTree = "<group>"; };
 		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
 		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
+		C127EDDD260A4DCA0091B8BB /* MarsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsModel.swift; sourceTree = "<group>"; };
+		C127EDE0260A4DFB0091B8BB /* PointsOfInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsOfInterest.swift; sourceTree = "<group>"; };
+		C127EDE3260A4E050091B8BB /* MarsInterest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MarsInterest.xcassets; sourceTree = "<group>"; };
+		C127EDE6260A4E260091B8BB /* MarsInterestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsInterestData.swift; sourceTree = "<group>"; };
 		D36B0A03260352760072D750 /* BibliLauraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraView.swift; sourceTree = "<group>"; };
 		D36B0A04260352760072D750 /* BibliLauraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraModel.swift; sourceTree = "<group>"; };
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 		22E6B8A326038C1B00930561 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				C127EDDC260A4DA90091B8BB /* Interest */,
 				22E6B88D26038BA400930561 /* MapView.swift */,
 			);
 			path = Map;
@@ -171,6 +180,17 @@
 				A9D4766526035D2100D9E910 /* Mars_3D.usdz */,
 			);
 			name = "Object 3D";
+			sourceTree = "<group>";
+		};
+		C127EDDC260A4DA90091B8BB /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				C127EDDD260A4DCA0091B8BB /* MarsModel.swift */,
+				C127EDE6260A4E260091B8BB /* MarsInterestData.swift */,
+				C127EDE0260A4DFB0091B8BB /* PointsOfInterest.swift */,
+				C127EDE3260A4E050091B8BB /* MarsInterest.xcassets */,
+			);
+			path = Interest;
 			sourceTree = "<group>";
 		};
 		D36B0A02260352330072D750 /* BibliLaura */ = {
@@ -249,6 +269,7 @@
 				A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */,
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
+				C127EDE4260A4E050091B8BB /* MarsInterest.xcassets in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,12 +286,15 @@
 				22E6B88826038B8E00930561 /* SidebarView.swift in Sources */,
 				22E6B8CC2603B44200930561 /* PhotoModels.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
+				C127EDDE260A4DCB0091B8BB /* MarsModel.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
+				C127EDE1260A4DFB0091B8BB /* PointsOfInterest.swift in Sources */,
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				22E6B89126038BAE00930561 /* SavedView.swift in Sources */,
 				22E6B89C26038BF800930561 /* VideoView.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
+				C127EDE7260A4E260091B8BB /* MarsInterestData.swift in Sources */,
 				22E6B89A26038BF800930561 /* AllView.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
 				22E6B8D12603D10400930561 /* PhotoAPI.swift in Sources */,
