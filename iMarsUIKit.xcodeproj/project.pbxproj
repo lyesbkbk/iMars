@@ -13,6 +13,13 @@
 		059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE626034CF000F6970F /* Preview Assets.xcassets */; };
 		059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059BFBE826034CF000F6970F /* LaunchScreen.storyboard */; };
 		059BFBF526034E3200F6970F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBF426034E3200F6970F /* Preview.swift */; };
+		22462F1026090D8500205F0E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F0F26090D8500205F0E /* WidgetKit.framework */; };
+		22462F1226090D8500205F0E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F1126090D8500205F0E /* SwiftUI.framework */; };
+		22462F1526090D8500205F0E /* Marswidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1426090D8500205F0E /* Marswidget.swift */; };
+		22462F1826090D8800205F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22462F1726090D8800205F0E /* Assets.xcassets */; };
+		22462F1A26090D8800205F0E /* Marswidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1626090D8500205F0E /* Marswidget.intentdefinition */; };
+		22462F1B26090D8800205F0E /* Marswidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1626090D8500205F0E /* Marswidget.intentdefinition */; };
+		22462F1E26090D8800205F0E /* MarswidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22462F0D26090D8500205F0E /* MarswidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		22E6B88826038B8E00930561 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B88726038B8E00930561 /* SidebarView.swift */; };
 		22E6B88E26038BA400930561 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B88D26038BA400930561 /* MapView.swift */; };
 		22E6B89126038BAE00930561 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B89026038BAE00930561 /* SavedView.swift */; };
@@ -35,6 +42,30 @@
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		22462F1C26090D8800205F0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 059BFBD226034CEE00F6970F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22462F0C26090D8500205F0E;
+			remoteInfo = MarswidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22462F2226090D8800205F0E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22462F1E26090D8800205F0E /* MarswidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		059BFBDA26034CEE00F6970F /* iMarsUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarsUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059BFBDD26034CEE00F6970F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +75,13 @@
 		059BFBE926034CF000F6970F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		059BFBEB26034CF000F6970F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		059BFBF426034E3200F6970F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		22462F0D26090D8500205F0E /* MarswidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarswidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		22462F0F26090D8500205F0E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		22462F1126090D8500205F0E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		22462F1426090D8500205F0E /* Marswidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marswidget.swift; sourceTree = "<group>"; };
+		22462F1626090D8500205F0E /* Marswidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Marswidget.intentdefinition; sourceTree = "<group>"; };
+		22462F1726090D8800205F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22462F1926090D8800205F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E6B88726038B8E00930561 /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		22E6B88D26038BA400930561 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		22E6B89026038BAE00930561 /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
@@ -74,6 +112,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22462F0A26090D8500205F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22462F1226090D8500205F0E /* SwiftUI.framework in Frameworks */,
+				22462F1026090D8500205F0E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				059BFBDC26034CEE00F6970F /* iMarsUIKit */,
+				22462F1326090D8500205F0E /* Marswidget */,
+				22462F0E26090D8500205F0E /* Frameworks */,
 				059BFBDB26034CEE00F6970F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				059BFBDA26034CEE00F6970F /* iMarsUIKit.app */,
+				22462F0D26090D8500205F0E /* MarswidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +169,26 @@
 				059BFBE626034CF000F6970F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22462F0E26090D8500205F0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22462F0F26090D8500205F0E /* WidgetKit.framework */,
+				22462F1126090D8500205F0E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22462F1326090D8500205F0E /* Marswidget */ = {
+			isa = PBXGroup;
+			children = (
+				22462F1426090D8500205F0E /* Marswidget.swift */,
+				22462F1626090D8500205F0E /* Marswidget.intentdefinition */,
+				22462F1726090D8800205F0E /* Assets.xcassets */,
+				22462F1926090D8800205F0E /* Info.plist */,
+			);
+			path = Marswidget;
 			sourceTree = "<group>";
 		};
 		22E6B8A026038BFE00930561 /* Libray */ = {
@@ -207,10 +277,12 @@
 				059BFBD626034CEE00F6970F /* Sources */,
 				059BFBD726034CEE00F6970F /* Frameworks */,
 				059BFBD826034CEE00F6970F /* Resources */,
+				22462F2226090D8800205F0E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22462F1D26090D8800205F0E /* PBXTargetDependency */,
 			);
 			name = iMarsUIKit;
 			packageProductDependencies = (
@@ -220,6 +292,23 @@
 			productName = iMarsUIKit;
 			productReference = 059BFBDA26034CEE00F6970F /* iMarsUIKit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		22462F0C26090D8500205F0E /* MarswidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22462F1F26090D8800205F0E /* Build configuration list for PBXNativeTarget "MarswidgetExtension" */;
+			buildPhases = (
+				22462F0926090D8500205F0E /* Sources */,
+				22462F0A26090D8500205F0E /* Frameworks */,
+				22462F0B26090D8500205F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarswidgetExtension;
+			productName = MarswidgetExtension;
+			productReference = 22462F0D26090D8500205F0E /* MarswidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -231,6 +320,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					059BFBD926034CEE00F6970F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					22462F0C26090D8500205F0E = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -253,6 +345,7 @@
 			projectRoot = "";
 			targets = (
 				059BFBD926034CEE00F6970F /* iMarsUIKit */,
+				22462F0C26090D8500205F0E /* MarswidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +359,14 @@
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059BFBE726034CF000F6970F /* Preview Assets.xcassets in Resources */,
 				059BFBE426034CF000F6970F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22462F0B26090D8500205F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22462F1826090D8800205F0E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +386,7 @@
 				059BFBF526034E3200F6970F /* Preview.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				22E6B8EF2608909C00930561 /* DataPOD.swift in Sources */,
+				22462F1B26090D8800205F0E /* Marswidget.intentdefinition in Sources */,
 				22E6B89126038BAE00930561 /* SavedView.swift in Sources */,
 				22E6B89C26038BF800930561 /* VideoView.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
@@ -299,7 +401,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22462F0926090D8500205F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22462F1526090D8500205F0E /* Marswidget.swift in Sources */,
+				22462F1A26090D8800205F0E /* Marswidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22462F1D26090D8800205F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22462F0C26090D8500205F0E /* MarswidgetExtension */;
+			targetProxy = 22462F1C26090D8800205F0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		059BFBE826034CF000F6970F /* LaunchScreen.storyboard */ = {
@@ -432,6 +551,7 @@
 		059BFBEF26034CF000F6970F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +572,7 @@
 		059BFBF026034CF000F6970F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +587,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		22462F2026090D8800205F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Marswidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Marswidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22462F2126090D8800205F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Marswidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Marswidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -486,6 +647,15 @@
 			buildConfigurations = (
 				059BFBEF26034CF000F6970F /* Debug */,
 				059BFBF026034CF000F6970F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22462F1F26090D8800205F0E /* Build configuration list for PBXNativeTarget "MarswidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22462F2026090D8800205F0E /* Debug */,
+				22462F2126090D8800205F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
