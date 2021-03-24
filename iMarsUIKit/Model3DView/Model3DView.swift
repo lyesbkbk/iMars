@@ -21,7 +21,7 @@ struct Model3DView: View {
         VStack{
             ZStack{
                 SceneView(scene : scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/1.3)
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/1.45)
                 
             }
             

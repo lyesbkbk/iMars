@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-////////////
-//LISTE A FAIRE//
-/////////////////
+
 
 struct DetailViewArticle: View {
     let article: Article
@@ -50,11 +48,14 @@ struct DetailViewArticle: View {
 
             
             }
+            
 
         }
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+//        .navigationBarItems(trailing: Buttonshare(content: DetailViewArticle(article: <#T##Article#>)))
     }
 }
+
 
 struct DetailViewArticle_Previews: PreviewProvider {
     static var previews: some View {

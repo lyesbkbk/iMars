@@ -64,6 +64,7 @@
 		D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A0C260367910072D750 /* DetailViewArticle.swift */; };
 		D36B0A12260368820072D750 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A11260368820072D750 /* ArticleModel.swift */; };
 		D3FF78FE260B66AB00FDEACC /* segmented3D-AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */; };
+		D3FF7902260B813A00FDEACC /* Buttonshare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF7901260B813A00FDEACC /* Buttonshare.swift */; };
 		F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BAF60260368FF0037B247 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,7 @@
 		D36B0A0C260367910072D750 /* DetailViewArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewArticle.swift; sourceTree = "<group>"; };
 		D36B0A11260368820072D750 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "segmented3D-AR.swift"; sourceTree = "<group>"; };
+		D3FF7901260B813A00FDEACC /* Buttonshare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttonshare.swift; sourceTree = "<group>"; };
 		F95BAF60260368FF0037B247 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -287,6 +289,7 @@
 				D36B0A10260368130072D750 /* Article */,
 				C136161C2607F1E800AB42A9 /* Videos */,
 				22E6B8AF2603961000930561 /* Photos */,
+				D3FF7901260B813A00FDEACC /* Buttonshare.swift */,
 			);
 			path = Bibliotheque;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				22E6B8E32604B33F00930561 /* DetailsPhotosView.swift in Sources */,
 				22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
+				D3FF7902260B813A00FDEACC /* Buttonshare.swift in Sources */,
 				A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */,
 				22E6B8E92604EA2100930561 /* PODView.swift in Sources */,
 				22E6B8F326089D3400930561 /* RoverModel.swift in Sources */,

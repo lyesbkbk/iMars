@@ -34,7 +34,7 @@ struct ArticleInGrid: View {
         NavigationLink(destination: DetailViewArticle(article: article))
         {
              
-                VStack {
+            VStack(alignment: .leading) {
                     Image(article.photo)
                         .resizable()
                         .scaledToFit()
@@ -44,6 +44,7 @@ struct ArticleInGrid: View {
                     Text(article.titre)
                         .font(Font.custom("Andale Mono", size: 18))
                         .foregroundColor(Color("blueiMars"))
+                    
                 }
             }
             .frame(width: 400, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
