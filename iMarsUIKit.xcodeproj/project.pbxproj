@@ -25,7 +25,7 @@
 		059BFC022603519800F6970F /* Model3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBFF2603519800F6970F /* Model3DView.swift */; };
 		059BFC032603519800F6970F /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFC002603519800F6970F /* Model3D.swift */; };
 		059BFC042603519800F6970F /* Model3DRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFC012603519800F6970F /* Model3DRaw.swift */; };
-		05A9AA7D260A5D6F005B2041 /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9AA7C260A5D6F005B2041 /* ArticleList.swift */; };
+		05A9AA7D260A5D6F005B2041 /* ArticleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9AA7C260A5D6F005B2041 /* ArticleGrid.swift */; };
 		22462F1026090D8500205F0E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F0F26090D8500205F0E /* WidgetKit.framework */; };
 		22462F1226090D8500205F0E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F1126090D8500205F0E /* SwiftUI.framework */; };
 		22462F1526090D8500205F0E /* Marswidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1426090D8500205F0E /* Marswidget.swift */; };
@@ -115,7 +115,7 @@
 		059BFBFF2603519800F6970F /* Model3DView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3DView.swift; sourceTree = "<group>"; };
 		059BFC002603519800F6970F /* Model3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
 		059BFC012603519800F6970F /* Model3DRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3DRaw.swift; sourceTree = "<group>"; };
-		05A9AA7C260A5D6F005B2041 /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
+		05A9AA7C260A5D6F005B2041 /* ArticleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleGrid.swift; sourceTree = "<group>"; };
 		22462F0D26090D8500205F0E /* MarswidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarswidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		22462F0F26090D8500205F0E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		22462F1126090D8500205F0E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -389,7 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				D36B0A0C260367910072D750 /* DetailViewArticle.swift */,
-				05A9AA7C260A5D6F005B2041 /* ArticleList.swift */,
+				05A9AA7C260A5D6F005B2041 /* ArticleGrid.swift */,
 				D36B0A11260368820072D750 /* ArticleModel.swift */,
 			);
 			name = Article;
@@ -522,7 +522,7 @@
 			files = (
 				D36B0A12260368820072D750 /* ArticleModel.swift in Sources */,
 				22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */,
-				05A9AA7D260A5D6F005B2041 /* ArticleList.swift in Sources */,
+				05A9AA7D260A5D6F005B2041 /* ArticleGrid.swift in Sources */,
 				059BFC042603519800F6970F /* Model3DRaw.swift in Sources */,
 				059BFC032603519800F6970F /* Model3D.swift in Sources */,
 				225F5E04260A4A7F00FB6A27 /* AppDelegate.swift in Sources */,
