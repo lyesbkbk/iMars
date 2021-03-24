@@ -25,7 +25,7 @@
 		059BFC022603519800F6970F /* Model3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFBFF2603519800F6970F /* Model3DView.swift */; };
 		059BFC032603519800F6970F /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFC002603519800F6970F /* Model3D.swift */; };
 		059BFC042603519800F6970F /* Model3DRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BFC012603519800F6970F /* Model3DRaw.swift */; };
-		05A9AA7D260A5D6F005B2041 /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9AA7C260A5D6F005B2041 /* ArticleList.swift */; };
+		05A9AA7D260A5D6F005B2041 /* ArticleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9AA7C260A5D6F005B2041 /* ArticleGrid.swift */; };
 		22462F1026090D8500205F0E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F0F26090D8500205F0E /* WidgetKit.framework */; };
 		22462F1226090D8500205F0E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22462F1126090D8500205F0E /* SwiftUI.framework */; };
 		22462F1526090D8500205F0E /* Marswidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22462F1426090D8500205F0E /* Marswidget.swift */; };
@@ -63,6 +63,7 @@
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
 		D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A0C260367910072D750 /* DetailViewArticle.swift */; };
 		D36B0A12260368820072D750 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A11260368820072D750 /* ArticleModel.swift */; };
+		D3FF78FE260B66AB00FDEACC /* segmented3D-AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */; };
 		F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BAF60260368FF0037B247 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,7 +112,7 @@
 		059BFBFF2603519800F6970F /* Model3DView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3DView.swift; sourceTree = "<group>"; };
 		059BFC002603519800F6970F /* Model3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
 		059BFC012603519800F6970F /* Model3DRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model3DRaw.swift; sourceTree = "<group>"; };
-		05A9AA7C260A5D6F005B2041 /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
+		05A9AA7C260A5D6F005B2041 /* ArticleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleGrid.swift; sourceTree = "<group>"; };
 		22462F0D26090D8500205F0E /* MarswidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarswidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		22462F0F26090D8500205F0E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		22462F1126090D8500205F0E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -145,6 +146,7 @@
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
 		D36B0A0C260367910072D750 /* DetailViewArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewArticle.swift; sourceTree = "<group>"; };
 		D36B0A11260368820072D750 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "segmented3D-AR.swift"; sourceTree = "<group>"; };
 		F95BAF60260368FF0037B247 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 				059BFC002603519800F6970F /* Model3D.swift */,
 				059BFC012603519800F6970F /* Model3DRaw.swift */,
 				059BFBFF2603519800F6970F /* Model3DView.swift */,
+				D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */,
 			);
 			path = Model3DView;
 			sourceTree = "<group>";
@@ -377,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				D36B0A0C260367910072D750 /* DetailViewArticle.swift */,
-				05A9AA7C260A5D6F005B2041 /* ArticleList.swift */,
+				05A9AA7C260A5D6F005B2041 /* ArticleGrid.swift */,
 				D36B0A11260368820072D750 /* ArticleModel.swift */,
 			);
 			name = Article;
@@ -509,11 +512,12 @@
 			files = (
 				D36B0A12260368820072D750 /* ArticleModel.swift in Sources */,
 				22E6B8DC2604A02200930561 /* StructurePhotosView.swift in Sources */,
-				05A9AA7D260A5D6F005B2041 /* ArticleList.swift in Sources */,
+				05A9AA7D260A5D6F005B2041 /* ArticleGrid.swift in Sources */,
 				059BFC042603519800F6970F /* Model3DRaw.swift in Sources */,
 				059BFC032603519800F6970F /* Model3D.swift in Sources */,
 				225F5E04260A4A7F00FB6A27 /* AppDelegate.swift in Sources */,
 				059BFC022603519800F6970F /* Model3DView.swift in Sources */,
+				D3FF78FE260B66AB00FDEACC /* segmented3D-AR.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */,
 				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
@@ -697,7 +701,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -705,7 +709,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,7 +724,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -728,7 +732,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -741,14 +745,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				INFOPLIST_FILE = Marswidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Marswidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -762,14 +766,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				INFOPLIST_FILE = Marswidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Marswidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

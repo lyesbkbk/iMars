@@ -86,7 +86,7 @@ struct Sidebar: View {
                                           imageLabel: "video.fill",
                                           textLabel: "Videos"
                     )
-                    SidebarNavigationLink(destination: AnyView(ArticleList()),
+                    SidebarNavigationLink(destination: AnyView(ArticleGrid()),
                                           tag: Menu.articles,
                                           selection: self.$selection,
                                           imageLabel: "newspaper.fill",
@@ -141,6 +141,8 @@ struct Sidebar: View {
 
 struct Sidebar_Previews: PreviewProvider {
     static var previews: some View {
-        Sidebar()
+        Landscape{
+          Sidebar()
+        }
     }
 }

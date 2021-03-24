@@ -42,7 +42,7 @@ struct DetailViewArticle: View {
                 .fontWeight(.medium)
                 .foregroundColor(Color("blueiMars"))
                 .multilineTextAlignment(.center)
-                .font(.custom("SF Compact", size: 30))
+                .font(.custom("Andale Mono", size: 30))
 
               Text(article.contenu)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -60,7 +60,7 @@ struct DetailViewArticle_Previews: PreviewProvider {
     static var previews: some View {
         
         Landscape {
-            DetailViewArticle(article: Articles[1])
+            DetailViewArticle(article: Article.data[0])
                 
         }
     }

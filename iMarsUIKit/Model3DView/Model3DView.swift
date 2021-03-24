@@ -38,7 +38,7 @@ struct Model3DView: View {
                        
                         }
                 }
-            }.frame(maxHeight: 170)
+            }.frame(maxHeight: 250)
             //            Spacer()
             
             
