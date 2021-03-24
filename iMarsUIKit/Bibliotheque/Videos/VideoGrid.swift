@@ -15,8 +15,11 @@ struct VideoGrid: View {
     var video: [Video]
     
     var body: some View {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: hGridLayout) {
+        ScrollView() {
+//            LazyHGrid(rows: hGridLayout) {
+//                ForEach(video) { videos in
+//                    VideoInGrid(video: videos)
+            LazyVGrid(columns: hGridLayout) {
                 ForEach(video) { videos in
                     VideoInGrid(video: videos)
                 }
