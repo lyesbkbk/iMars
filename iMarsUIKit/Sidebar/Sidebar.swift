@@ -141,6 +141,8 @@ struct Sidebar: View {
 
 struct Sidebar_Previews: PreviewProvider {
     static var previews: some View {
-        Sidebar()
+        Landscape {
+            Sidebar()
+        }
     }
 }
