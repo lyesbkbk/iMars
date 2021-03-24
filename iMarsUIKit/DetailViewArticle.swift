@@ -11,6 +11,20 @@ import SwiftUI
 
 struct DetailViewArticle: View {
     let article: Article
+    
+    var btnShare: some View{
+        Button(action: {
+            let av = UIActivityViewController(activityItems: ["iMars"], applicationActivities: nil)
+            UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+        }, label: {
+            Image(systemName: "square.and.arrow.up")
+                .foregroundColor(Color.blue)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+
+        }
+        )
+    }
+    
     var body: some View {
         ScrollView   {
             VStack {
@@ -53,6 +67,7 @@ struct DetailViewArticle: View {
         }
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 //        .navigationBarItems(trailing: Buttonshare(content: DetailViewArticle(article: <#T##Article#>)))
+        .navigationBarItems(trailing: btnShare )
     }
 }
 

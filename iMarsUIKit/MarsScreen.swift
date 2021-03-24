@@ -36,8 +36,9 @@ struct MarsScreen: View {
                 .ignoresSafeArea(.all)
             HStack {
                 Spacer()
-                VStack {
+                VStack(spacing: 80) {
                     WeatherView(planet: "Mars", temperatures: "-97 / -4", pression: "857", gravity: "3.71", objDef: "Objets martiens", color: Color(UIColor(named: "rediMars")!))
+                    
                     WeatherView(planet: "Terre", temperatures: "-45 / +52", pression: "1013", gravity: "9.80", objDef: "Objets terriens", color: Color(UIColor(named: "blueiMars")!))
                 }
                 .offset(x: -20)

@@ -17,16 +17,18 @@ struct Model3DRaw: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
-                VStack {
+                VStack(alignment: .center, spacing: 100.0) {
                     Text(item.name)
-                        .font(.title)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+//                        .font(.title2)
+                        .foregroundColor(Color("rediMars"))
                         .fontWeight(.semibold)
+                        .font(.custom("Andale Mono", size: 23))
+                        .offset(y:25)
                     Spacer()
-                }.padding(.top)
+                }
             }
-        }.cornerRadius(20)
-        .frame(maxWidth : 150)
+        }.cornerRadius(5)
+        .frame(maxWidth : 170)
         }
     }
 

@@ -16,7 +16,7 @@ struct SidebarHeader: View {
     
     var body: some View {
         Text(title)
-            .foregroundColor(.black)
+            .foregroundColor(.white)
             .fontWeight(.bold)
     }
 }
@@ -40,7 +40,7 @@ struct SidebarNavigationLink: View {
                 
             }
         )
-        .foregroundColor(selection == tag ? Color.white : Color.black)
+        .foregroundColor(Color.white)
         .background(Rectangle()
                         .fill(selection == tag ? Color(UIColor(named: "rediMars")!) : Color.clear)
                         .cornerRadius(7)
@@ -134,6 +134,7 @@ struct Sidebar: View {
             .listStyle(SidebarListStyle())
             .navigationBarTitleDisplayMode(.inline)
         }
+        .colorScheme(.dark)
         .navigationViewStyle(DoubleColumnNavigationViewStyle())
         
     }
