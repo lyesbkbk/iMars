@@ -49,6 +49,10 @@
 		22E6B8F326089D3400930561 /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8F226089D3400930561 /* RoverModel.swift */; };
 		22E6B8F926089D6500930561 /* RoverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6B8F826089D6500930561 /* RoverData.swift */; };
 		A912EA262609DCDA00B1D718 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912EA252609DCDA00B1D718 /* WeatherView.swift */; };
+		A999CBBC260B69890048114B /* InterestPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999CBBB260B69890048114B /* InterestPoint.swift */; };
+		A999CBC0260B77AE0048114B /* MarsInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999CBBF260B77AE0048114B /* MarsInterest.swift */; };
+		A999CBC6260B7D450048114B /* PointOfInterestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999CBC5260B7D450048114B /* PointOfInterestDetail.swift */; };
+		A999CBCA260B7E5C0048114B /* MarsInterest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A999CBC9260B7E5C0048114B /* MarsInterest.xcassets */; };
 		A9CA9F2A2607A9C8008491AF /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA9F292607A9C8008491AF /* Sidebar.swift */; };
 		A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A9D4766526035D2100D9E910 /* Mars_3D.usdz */; };
 		A9D4766A26035DA000D9E910 /* MarsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4766926035DA000D9E910 /* MarsScreen.swift */; };
@@ -131,6 +135,10 @@
 		22E6B8F226089D3400930561 /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
 		22E6B8F826089D6500930561 /* RoverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverData.swift; sourceTree = "<group>"; };
 		A912EA252609DCDA00B1D718 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		A999CBBB260B69890048114B /* InterestPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestPoint.swift; sourceTree = "<group>"; };
+		A999CBBF260B77AE0048114B /* MarsInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsInterest.swift; sourceTree = "<group>"; };
+		A999CBC5260B7D450048114B /* PointOfInterestDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestDetail.swift; sourceTree = "<group>"; };
+		A999CBC9260B7E5C0048114B /* MarsInterest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MarsInterest.xcassets; sourceTree = "<group>"; };
 		A9CA9F292607A9C8008491AF /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		A9D4766526035D2100D9E910 /* Mars_3D.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars_3D.usdz; sourceTree = "<group>"; };
 		A9D4766926035DA000D9E910 /* MarsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsScreen.swift; sourceTree = "<group>"; };
@@ -329,9 +337,13 @@
 		A9D4766426035C4300D9E910 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A999CBC9260B7E5C0048114B /* MarsInterest.xcassets */,
 				A9D4766826035D3200D9E910 /* Object 3D */,
 				A9D4766926035DA000D9E910 /* MarsScreen.swift */,
+				A999CBBB260B69890048114B /* InterestPoint.swift */,
 				A912EA252609DCDA00B1D718 /* WeatherView.swift */,
+				A999CBBF260B77AE0048114B /* MarsInterest.swift */,
+				A999CBC5260B7D450048114B /* PointOfInterestDetail.swift */,
 			);
 			name = "Main Screen";
 			sourceTree = "<group>";
@@ -472,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A999CBCA260B7E5C0048114B /* MarsInterest.xcassets in Resources */,
 				A9D4766626035D2100D9E910 /* Mars_3D.usdz in Resources */,
 				059BFBEA26034CF000F6970F /* LaunchScreen.storyboard in Resources */,
 				059426C72604DEAB003E05CB /* Phobos.usdz in Resources */,
@@ -516,10 +529,12 @@
 				059BFC022603519800F6970F /* Model3DView.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */,
+				A999CBBC260B69890048114B /* InterestPoint.swift in Sources */,
 				22E6B8F926089D6500930561 /* RoverData.swift in Sources */,
 				D36B0A06260352770072D750 /* BibliLauraView.swift in Sources */,
 				A912EA262609DCDA00B1D718 /* WeatherView.swift in Sources */,
 				D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */,
+				A999CBC0260B77AE0048114B /* MarsInterest.swift in Sources */,
 				F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */,
 				D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */,
 				C13616172607F04E00AB42A9 /* VideoDetail.swift in Sources */,
@@ -531,6 +546,7 @@
 				225F5E03260A4A7F00FB6A27 /* Preview.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
 				22E6B8E32604B33F00930561 /* DetailsPhotosView.swift in Sources */,
+				A999CBC6260B7D450048114B /* PointOfInterestDetail.swift in Sources */,
 				22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
 				A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */,
@@ -697,7 +713,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = 8U92M4RWTJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -705,7 +721,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,7 +736,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = 8U92M4RWTJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -728,7 +744,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -741,14 +757,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = 8U92M4RWTJ;
 				INFOPLIST_FILE = Marswidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Marswidget;
+				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin.Marswidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -762,14 +778,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GF2287775D;
+				DEVELOPMENT_TEAM = 8U92M4RWTJ;
 				INFOPLIST_FILE = Marswidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Marswidget;
+				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin.Marswidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

@@ -21,18 +21,23 @@ struct MarsScreen: View {
         return nil
     }()
     
-//    let sceneView: SceneView? = SceneView(scene: scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
-    
-    
     // If true : Change icon button
     @State var unseeMode: Bool = false
     
     // If false : hide informations
     @State var showInformation: Bool = true
     
+    // If true : Show popover
+    @State var showPopover: Bool = false
+    
+    // This set the value of the point of interest that appear in .sheet
+    @State var currentPoint: MarsInterest = MarsInterest.pointsOfInterest[12]
+    
+    @State var colorToPass: Color = Color("rediMars")
+    
     var body: some View {
         ZStack {
-            SceneView(scene: scnScene, options: [.autoenablesDefaultLighting, .allowsCameraControl], preferredFramesPerSecond: 60)
+            SceneView(scene: scnScene, options: self.unseeMode == true ? [.autoenablesDefaultLighting, .allowsCameraControl] : [.autoenablesDefaultLighting], preferredFramesPerSecond: 60)
                 .ignoresSafeArea(.all)
             HStack {
                 Spacer()
@@ -43,6 +48,13 @@ struct MarsScreen: View {
                 .offset(x: -20)
                 .opacity(self.unseeMode == false ? 1 : 0)
             }
+            Group {
+                InterestPoint(showPopover: $showPopover, currentPoint: self.$currentPoint, colorToPass: self.$colorToPass, pointToPass: MarsInterest.pointsOfInterest[1], color: Color("rediMars"), xValue: 0, yValue: 250)
+                InterestPoint(showPopover: $showPopover, currentPoint: self.$currentPoint, colorToPass: self.$colorToPass, pointToPass: MarsInterest.pointsOfInterest[0], color: Color("rediMars"), xValue: 0, yValue: -300)
+                InterestPoint(showPopover: $showPopover, currentPoint: self.$currentPoint, colorToPass: self.$colorToPass, pointToPass: MarsInterest.pointsOfInterest[5], color: Color("rediMars"), xValue: -240, yValue: -140)
+                InterestPoint(showPopover: $showPopover, currentPoint: self.$currentPoint, colorToPass: self.$colorToPass, pointToPass: MarsInterest.pointsOfInterest[2], color: Color("blueiMars"), xValue: 100, yValue: -100)
+            }
+            .opacity(self.unseeMode == false ? 1 : 0)
         }
         .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
         .navigationBarTitleDisplayMode(.inline)
@@ -52,6 +64,11 @@ struct MarsScreen: View {
             Image(systemName: self.unseeMode == false ? "eye" : "eye.slash")
                 .foregroundColor(Color(UIColor(named: "rediMars")!))
         }))
+        .sheet(isPresented: $showPopover) {
+            PointsOfInterestDetail(marsPointsOfInterest: self.currentPoint, colorTitle: self.colorToPass)
+                .background(Color.black)
+        }
+        
     }
 }
 
