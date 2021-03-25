@@ -17,32 +17,41 @@ struct WeatherView: View {
     var color: Color
     
     var body: some View {
-        VStack(alignment: .trailing) {
+        VStack(alignment: .trailing, spacing: 3) {
             Text("\(planet)")
                 .bold()
-                .font(.title2)
+//                .font(.title2)
                 .foregroundColor(color)
+                .font(.custom("Andale Mono", size: 27))
             Text("Températures °C")
                 .foregroundColor(color)
+                .font(.custom("Andale Mono", size: 17))
             Text("\(temperatures)")
                 .foregroundColor(.white)
+                .font(.custom("Andale Mono", size: 17))
             Text("Pression PA")
                 .foregroundColor(color)
+                .font(.custom("Andale Mono", size: 17))
             Text("\(pression)")
                 .foregroundColor(.white)
+                .font(.custom("Andale Mono", size: 17))
             Text("Gravité m/s")
                 .foregroundColor(color)
+                .font(.custom("Andale Mono", size: 17))
             Text("\(gravity)")
                 .foregroundColor(.white)
+                .font(.custom("Andale Mono", size: 17))
             Image(systemName: "circle")
+                .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
                 .foregroundColor(color)
             Text("\(objDef)")
                 .foregroundColor(.white)
+                .font(.custom("Andale Mono", size: 17))
             
         }
         .padding()
-        .background(Color.black .opacity(0.5))
-        .cornerRadius(10)
+        .background(Color.black .opacity(0.2))
+        .cornerRadius(6)
     }
 }
 

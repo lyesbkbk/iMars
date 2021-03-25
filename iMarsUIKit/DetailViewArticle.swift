@@ -7,12 +7,24 @@
 
 import SwiftUI
 
-////////////
-//LISTE A FAIRE//
-/////////////////
+
 
 struct DetailViewArticle: View {
     let article: Article
+    
+    var btnShare: some View{
+        Button(action: {
+            let av = UIActivityViewController(activityItems: ["iMars"], applicationActivities: nil)
+            UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+        }, label: {
+            Image(systemName: "square.and.arrow.up")
+                .foregroundColor(Color.blue)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+
+        }
+        )
+    }
+    
     var body: some View {
         ScrollView   {
             VStack {
@@ -42,7 +54,7 @@ struct DetailViewArticle: View {
                 .fontWeight(.medium)
                 .foregroundColor(Color("blueiMars"))
                 .multilineTextAlignment(.center)
-                .font(.custom("SF Compact", size: 30))
+                .font(.custom("Andale Mono", size: 30))
 
               Text(article.contenu)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -50,17 +62,21 @@ struct DetailViewArticle: View {
 
             
             }
+            
 
         }
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+//        .navigationBarItems(trailing: Buttonshare(content: DetailViewArticle(article: <#T##Article#>)))
+        .navigationBarItems(trailing: btnShare )
     }
 }
+
 
 struct DetailViewArticle_Previews: PreviewProvider {
     static var previews: some View {
         
         Landscape {
-            DetailViewArticle(article: Articles[1])
+            DetailViewArticle(article: Article.data[0])
                 
         }
     }

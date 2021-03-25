@@ -13,7 +13,7 @@ struct DetailsPhotosView: View {
     let item: RoverPhoto
     
     var body: some View {
-        ScrollView {
+        
             VStack {
                 if let url = URL(string: item.img_src) {
                     KFImage(url)
@@ -23,10 +23,11 @@ struct DetailsPhotosView: View {
                         .cornerRadius(5.0)
                 }
                 Text(item.rover.name)
-                    .font(.title)
-                Text(item.rover.name)
+                    .font(.custom("Andale Mono", size: 25))
+                    .foregroundColor(Color("rediMars"))
                 
-            }
+                
+           
         }
     }
 }

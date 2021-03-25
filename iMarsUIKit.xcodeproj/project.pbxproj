@@ -67,6 +67,8 @@
 		D36B0A08260352770072D750 /* BibliLauraTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A05260352770072D750 /* BibliLauraTag.swift */; };
 		D36B0A0D260367910072D750 /* DetailViewArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A0C260367910072D750 /* DetailViewArticle.swift */; };
 		D36B0A12260368820072D750 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36B0A11260368820072D750 /* ArticleModel.swift */; };
+		D3FF78FE260B66AB00FDEACC /* segmented3D-AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */; };
+		D3FF7902260B813A00FDEACC /* Buttonshare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF7901260B813A00FDEACC /* Buttonshare.swift */; };
 		F95BAF61260368FF0037B247 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BAF60260368FF0037B247 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +155,8 @@
 		D36B0A05260352770072D750 /* BibliLauraTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliLauraTag.swift; sourceTree = "<group>"; };
 		D36B0A0C260367910072D750 /* DetailViewArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewArticle.swift; sourceTree = "<group>"; };
 		D36B0A11260368820072D750 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "segmented3D-AR.swift"; sourceTree = "<group>"; };
+		D3FF7901260B813A00FDEACC /* Buttonshare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttonshare.swift; sourceTree = "<group>"; };
 		F95BAF60260368FF0037B247 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +216,7 @@
 				059BFC002603519800F6970F /* Model3D.swift */,
 				059BFC012603519800F6970F /* Model3DRaw.swift */,
 				059BFBFF2603519800F6970F /* Model3DView.swift */,
+				D3FF78FD260B66AB00FDEACC /* segmented3D-AR.swift */,
 			);
 			path = Model3DView;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				D36B0A10260368130072D750 /* Article */,
 				C136161C2607F1E800AB42A9 /* Videos */,
 				22E6B8AF2603961000930561 /* Photos */,
+				D3FF7901260B813A00FDEACC /* Buttonshare.swift */,
 			);
 			path = Bibliotheque;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				059BFC032603519800F6970F /* Model3D.swift in Sources */,
 				225F5E04260A4A7F00FB6A27 /* AppDelegate.swift in Sources */,
 				059BFC022603519800F6970F /* Model3DView.swift in Sources */,
+				D3FF78FE260B66AB00FDEACC /* segmented3D-AR.swift in Sources */,
 				059BFBE026034CEE00F6970F /* SceneDelegate.swift in Sources */,
 				C13616142607EF3B00AB42A9 /* VideoData.swift in Sources */,
 				A999CBBC260B69890048114B /* InterestPoint.swift in Sources */,
@@ -549,6 +556,7 @@
 				A999CBC6260B7D450048114B /* PointOfInterestDetail.swift in Sources */,
 				22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
+				D3FF7902260B813A00FDEACC /* Buttonshare.swift in Sources */,
 				A9E8E4172604E822005E45A7 /* ContentView.swift in Sources */,
 				22E6B8E92604EA2100930561 /* PODView.swift in Sources */,
 				22E6B8F326089D3400930561 /* RoverModel.swift in Sources */,
@@ -713,7 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
-				DEVELOPMENT_TEAM = 8U92M4RWTJ;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -721,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -736,7 +744,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iMarsUIKit/Preview Content\"";
-				DEVELOPMENT_TEAM = 8U92M4RWTJ;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iMarsUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -744,7 +752,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -757,14 +765,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U92M4RWTJ;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				INFOPLIST_FILE = Marswidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin.Marswidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -778,14 +786,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U92M4RWTJ;
+				DEVELOPMENT_TEAM = UX362G36TS;
 				INFOPLIST_FILE = Marswidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LyesBk.iMarsUIKit.Kevin.Marswidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplon.Laura.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
