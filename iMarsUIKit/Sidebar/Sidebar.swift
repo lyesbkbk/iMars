@@ -53,7 +53,11 @@ struct SidebarNavigationLink: View {
 
 struct Sidebar: View {
     
+    // Equals to selected menu on Sidebar
     @State private var selection: Menu? = Menu.mars
+    
+    // If true : Show sheet
+    @State var showSheet: Bool = false
     
     var body: some View {
         NavigationView {
@@ -68,11 +72,11 @@ struct Sidebar: View {
                 }
                 
                 Section(header: SidebarHeader(title: "Library")) {
-                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
+                    SidebarNavigationLink(destination: AnyView(PodView()),
                                           tag: Menu.libAll,
                                           selection: self.$selection,
-                                          imageLabel: "server.rack",
-                                          textLabel: "All"
+                                          imageLabel: "photo.fill",
+                                          textLabel: "Pic of the day"
                     )
                     SidebarNavigationLink(destination: AnyView(StructurePhotosView()),
                                           tag: Menu.photos,
@@ -102,39 +106,40 @@ struct Sidebar: View {
                                           imageLabel: "server.rack",
                                           textLabel: "All"
                     )
-//                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
-//                                          tag: Menu.dMars,
-//                                          selection: self.$selection,
-//                                          imageLabel: "photo.fill.on.rectangle.fill",
-//                                          textLabel: "Mars"
-//                    )
-//                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
-//                                          tag: Menu.rovers,
-//                                          selection: self.$selection,
-//                                          imageLabel: "video.fill",
-//                                          textLabel: "Rovers"
-//                    )
-//                    SidebarNavigationLink(destination: AnyView(MarsScreen()),
-//                                          tag: Menu.sondes,
-//                                          selection: self.$selection,
-//                                          imageLabel: "newspaper.fill",
-//                                          textLabel: "Sondes"
-//                    )
                 }
                 
-                Section(header: SidebarHeader(title: "Saved")) {
-                    SidebarNavigationLink(destination: AnyView(SavedView()),
-                                          tag: Menu.saved,
-                                          selection: self.$selection,
-                                          imageLabel: "square.and.arrow.down",
-                                          textLabel: "Saved"
-                    )
-                }
+                //                Section(header: SidebarHeader(title: "Credits")) {
+                //                    SidebarNavigationLink(destination: AnyView(SavedView()),
+                //                                          tag: Menu.saved,
+                //                                          selection: self.$selection,
+                //                                          imageLabel: "figure.wave.circle",
+                //                                          textLabel: "Credits"
+                //                    )
+                //                }
+                Spacer()
+                    .frame(width: 10, height: 200)
+                Divider()
+                Button(action: {
+                    self.showSheet.toggle()
+                }, label: {
+                    HStack {
+                        Image(systemName: "checkmark.seal.fill")
+                            .foregroundColor(Color("blueiMars"))
+                        Text("Credits")
+                            .foregroundColor(.white)
+                    }
+                })
             }
+            .sheet(isPresented: $showSheet) {
+                SavedView()
+                    .background(Color.black)
+            }
+            .background(Color.green)
             .listStyle(SidebarListStyle())
             .navigationBarTitleDisplayMode(.inline)
         }
         .colorScheme(.dark)
+        .accentColor(Color("rediMars"))
         .navigationViewStyle(DoubleColumnNavigationViewStyle())
         
     }
@@ -143,7 +148,7 @@ struct Sidebar: View {
 struct Sidebar_Previews: PreviewProvider {
     static var previews: some View {
         Landscape{
-          Sidebar()
+            Sidebar()
         }
     }
 }

@@ -19,8 +19,8 @@ struct DetailViewArticle: View {
         }, label: {
             Image(systemName: "square.and.arrow.up")
                 .foregroundColor(Color.blue)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-
+                .font(.title)
+            
         }
         )
     }
@@ -68,15 +68,15 @@ struct DetailViewArticle: View {
               Text(article.contenu)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     .font(.custom("SF Compact", size: 17))
-
-            
             }
-            
-
         }
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
-//        .navigationBarItems(trailing: Buttonshare(content: DetailViewArticle(article: <#T##Article#>)))
-        .navigationBarItems(trailing: btnShare )
+        .navigationBarItems(trailing: Button(action: {
+            print("Share")
+        }, label: {
+            Image(systemName: "square.and.arrow.up")
+                .foregroundColor(Color(UIColor(named: "rediMars")!))
+        }))
     }
 }
 
@@ -86,7 +86,7 @@ struct DetailViewArticle_Previews: PreviewProvider {
         
         Landscape {
             DetailViewArticle(article: Article.data[0])
-                
+            
         }
     }
 }
