@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05031305260D1BEE004DE38D /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05031304260D1BEE004DE38D /* ARView.swift */; };
+		05031309260D1C1D004DE38D /* ARData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05031308260D1C1D004DE38D /* ARData.swift */; };
+		0503131A260D1F4E004DE38D /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 05031319260D1F4E004DE38D /* FocusEntity */; };
 		050E3C4326039DC500D646D6 /* Mars.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 050E3C4226039DC500D646D6 /* Mars.usdz */; };
 		059426B52604DDD2003E05CB /* Curiosity.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B42604DDD2003E05CB /* Curiosity.usdz */; };
 		059426C02604DEAB003E05CB /* Perseverance.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 059426B72604DEA9003E05CB /* Perseverance.usdz */; };
@@ -91,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05031304260D1BEE004DE38D /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		05031308260D1C1D004DE38D /* ARData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARData.swift; sourceTree = "<group>"; };
 		050E3C4226039DC500D646D6 /* Mars.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars.usdz; sourceTree = "<group>"; };
 		059426B42604DDD2003E05CB /* Curiosity.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Curiosity.usdz; sourceTree = "<group>"; };
 		059426B72604DEA9003E05CB /* Perseverance.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Perseverance.usdz; sourceTree = "<group>"; };
@@ -153,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0503131A260D1F4E004DE38D /* FocusEntity in Frameworks */,
 				22E6B8D92603D45F00930561 /* Kingfisher in Frameworks */,
 				22E6B8E02604A22000930561 /* WaterfallGrid in Frameworks */,
 			);
@@ -170,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05031300260D0572004DE38D /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				05031304260D1BEE004DE38D /* ARView.swift */,
+				05031308260D1C1D004DE38D /* ARData.swift */,
+			);
+			name = AR;
+			sourceTree = "<group>";
+		};
 		050E3C472603A90100D646D6 /* Model3D */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +373,7 @@
 		D36B0A02260352330072D750 /* BibliLaura */ = {
 			isa = PBXGroup;
 			children = (
+				05031300260D0572004DE38D /* AR */,
 				D36B0A0F260368000072D750 /* BibliListe */,
 			);
 			name = BibliLaura;
@@ -405,6 +421,7 @@
 			packageProductDependencies = (
 				22E6B8D82603D45F00930561 /* Kingfisher */,
 				22E6B8DF2604A22000930561 /* WaterfallGrid */,
+				05031319260D1F4E004DE38D /* FocusEntity */,
 			);
 			productName = iMarsUIKit;
 			productReference = 059BFBDA26034CEE00F6970F /* iMarsUIKit.app */;
@@ -456,6 +473,7 @@
 			packageReferences = (
 				22E6B8D72603D45F00930561 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				22E6B8DE2604A22000930561 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				05031318260D1F4E004DE38D /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = 059BFBDB26034CEE00F6970F /* Products */;
 			projectDirPath = "";
@@ -527,9 +545,11 @@
 				22E6B8EF2608909C00930561 /* DataPOD.swift in Sources */,
 				22462F1B26090D8800205F0E /* Marswidget.intentdefinition in Sources */,
 				22E6B89126038BAE00930561 /* SavedView.swift in Sources */,
+				05031309260D1C1D004DE38D /* ARData.swift in Sources */,
 				A9CA9F2A2607A9C8008491AF /* Sidebar.swift in Sources */,
 				225F5E03260A4A7F00FB6A27 /* Preview.swift in Sources */,
 				D36B0A07260352770072D750 /* BibliLauraModel.swift in Sources */,
+				05031305260D1BEE004DE38D /* ARView.swift in Sources */,
 				22E6B8E32604B33F00930561 /* DetailsPhotosView.swift in Sources */,
 				22E6B8EC26088A1A00930561 /* ModelPOD.swift in Sources */,
 				22E6B88E26038BA400930561 /* MapView.swift in Sources */,
@@ -810,6 +830,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		05031318260D1F4E004DE38D /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
 		22E6B8D72603D45F00930561 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -829,6 +857,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		05031319260D1F4E004DE38D /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05031318260D1F4E004DE38D /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
 		22E6B8D82603D45F00930561 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 22E6B8D72603D45F00930561 /* XCRemoteSwiftPackageReference "Kingfisher" */;
