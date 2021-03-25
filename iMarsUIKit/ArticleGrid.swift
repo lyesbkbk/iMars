@@ -4,8 +4,6 @@
 //
 //  Created by Lyes BOUKBOUKA on 23/03/2021.
 //
-
-
 import SwiftUI
 
 struct ArticleGrid: View {
