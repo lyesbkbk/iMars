@@ -20,16 +20,19 @@ struct PodView: View {
                         KFImage(url)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(maxWidth: 500)
                             .cornerRadius(5.0)
                     }
                     Text(item.title ?? "No title")
-                        .font(.title)
+                        .font(Font.custom("Andale Mono", size: 25))
+                        .foregroundColor(Color("blueiMars"))
                     HStack{
                         Text("Image by")
-                        Text(item.copyright ?? "No copyright")
+                        Text(item.copyright ?? "no copyright")
                     }
+                    .font(Font.custom("SF-Compact", size: 16))
+                    .foregroundColor(Color("rediMars"))
                     Text(item.explanation ?? "No description")
+                        .padding(.all)
                 }
             }
         } else  {

@@ -15,35 +15,33 @@ struct VideoGrid: View {
     var video: [Video]
     
     var body: some View {
-        ScrollView() {
-//            LazyHGrid(rows: hGridLayout) {
-//                ForEach(video) { videos in
-//                    VideoInGrid(video: videos)
-            LazyVGrid(columns: hGridLayout) {
+        ScrollView(.horizontal) {
+            LazyHGrid(rows: hGridLayout) {
                 ForEach(video) { videos in
                     VideoInGrid(video: videos)
                 }
             }
-            .padding(.leading)
+            .padding(.all)
         }
     }
 }
-        
+
 struct VideoInGrid: View {
+    
     var video: Video
-            
+    
     var body: some View {
         NavigationLink(destination: VideoDetail(video: video))
         {
-            VideoPlayer(player: AVPlayer(url:  URL(string: video.source)!)) {
-                VStack {
-                    Spacer()
-                    Text(video.titel)
-                        .font(Font.custom("Andale Mono", size: 18))
-                        .foregroundColor(Color("blueiMars"))
-                }
+            VStack {
+                VideoPlayer(player: AVPlayer(url:  URL(string: video.source)!))
+                Text(video.titel)
+                    .font(Font.custom("Andale Mono", size: 18))
+                    .foregroundColor(Color("blueiMars"))
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
             }
             .frame(width: 400, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .padding(.bottom)
         }
     }
 }
