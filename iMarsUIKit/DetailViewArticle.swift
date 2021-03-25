@@ -36,25 +36,34 @@ struct DetailViewArticle: View {
 
                 
             
-            HStack {
-                Text(article.source)
-                    .foregroundColor(Color("rediMars"))
-                    .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                Spacer()
-                    
-                Text(article.date)
-                    .foregroundColor(Color("rediMars"))
-                    .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                    
                 
-            }
             
             
-              Text(article.titre)
-                .fontWeight(.medium)
-                .foregroundColor(Color("blueiMars"))
-                .multilineTextAlignment(.center)
-                .font(.custom("Andale Mono", size: 30))
+                HStack {
+                    Text(article.titre)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color("blueiMars"))
+                    .multilineTextAlignment(.center)
+                        .font(.custom("Andale Mono", size: 30))
+                        .padding(.leading)
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                    Text(article.source)
+                        .foregroundColor(Color("rediMars"))
+                        .font(.custom("SF Compact", size: 17))
+                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                    
+                        
+                    Text(article.date)
+                        .foregroundColor(Color("rediMars"))
+                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                        
+                    
+                    }
+                    .padding(.trailing)
+                }
 
               Text(article.contenu)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
