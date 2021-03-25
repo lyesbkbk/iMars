@@ -28,28 +28,44 @@ struct DetailViewArticle: View {
     var body: some View {
         ScrollView   {
             VStack {
-                Image(article.photo)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth : 1150, maxHeight: 650)
-                    .cornerRadius(5.0)
+            Image(article.photo)
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth : 1150, maxHeight: 650)
+                .cornerRadius(5.0)
+
+                
+            
+                
+            
+            
                 HStack {
-                    Text(article.source)
-                        .foregroundColor(Color("rediMars"))
-                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                    
-                    Text(article.date)
-                        .foregroundColor(Color("rediMars"))
-                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-                }
-                Text(article.titre)
+                    Text(article.titre)
                     .fontWeight(.medium)
                     .foregroundColor(Color("blueiMars"))
                     .multilineTextAlignment(.center)
-                    .font(.custom("Andale Mono", size: 30))
-                
-                Text(article.contenu)
+                        .font(.custom("Andale Mono", size: 30))
+                        .padding(.leading)
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .trailing) {
+                    Text(article.source)
+                        .foregroundColor(Color("rediMars"))
+                        .font(.custom("SF Compact", size: 17))
+                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                    
+                        
+                    Text(article.date)
+                        .foregroundColor(Color("rediMars"))
+                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                        
+                    
+                    }
+                    .padding(.trailing)
+                }
+
+              Text(article.contenu)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     .font(.custom("SF Compact", size: 17))
             }
