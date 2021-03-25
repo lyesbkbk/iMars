@@ -15,19 +15,17 @@ struct aEnvoyer : Identifiable{
     
 }
 
-
-    
-    
-    var btnShare : some View { Button(action: {
+var btnShare : some View {
+    Button(action: {
         let av = UIActivityViewController(activityItems: ["iMars"], applicationActivities: nil)
         UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
     }, label: {
         Image(systemName: "square.and.arrow.up")
             .foregroundColor(Color.colorBlue)
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-
     }
-    )}
+    )
+}
 //    var body: some View
 
 //struct Buttonshare_Previews: PreviewProvider {

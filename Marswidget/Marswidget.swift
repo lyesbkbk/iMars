@@ -52,7 +52,7 @@ struct MarswidgetEntryView : View {
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: 100)
+ //               .frame(maxWidth: 100)
                 
                
         } else {

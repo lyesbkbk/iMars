@@ -13,14 +13,10 @@ struct VideoDetail: View {
     
     var body: some View {
         VStack {
-            VideoPlayer(player: AVPlayer(url:  URL(string: video.source)!)) {
-                VStack {
-                    Text(video.titel)
-                        .font(Font.custom("Andale Mono", size: 25))
-                        .foregroundColor(Color("blueiMars"))
-                    Spacer()
-                }
-            }
+            Text(video.titel)
+                .font(Font.custom("Andale Mono", size: 25))
+                .foregroundColor(Color("blueiMars"))
+            VideoPlayer(player: AVPlayer(url:  URL(string: video.source)!))
             Text(video.date)
                 .foregroundColor(Color("rediMars"))
                 .multilineTextAlignment(.leading)
@@ -29,6 +25,12 @@ struct VideoDetail: View {
                 .foregroundColor(Color("whiteiMars"))
                 .padding(.horizontal)
         }
+        .navigationBarItems(trailing: Button(action: {
+            print("Share")
+        }, label: {
+            Image(systemName: "square.and.arrow.up")
+                .foregroundColor(Color(UIColor(named: "rediMars")!))
+        }))
     }
 }
 
