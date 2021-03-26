@@ -35,9 +35,13 @@ struct ArticleInGrid: View {
             VStack(alignment: .leading) {
                     Image(article.photo)
                         .resizable()
-                        .scaledToFit()
+                        
+//                        .scaledToFit()
                         .frame(width: 400, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .scaledToFill()
+                        .aspectRatio(contentMode: .fill)
+                        .clipped()
+                
+                        
                     Spacer()
                     Text(article.titre)
                         .font(Font.custom("Andale Mono", size: 18))
