@@ -2,9 +2,8 @@
 //  ARView.swift
 //  iMarsUIKit
 //
-//  Created by Lyes BOUKBOUKA on 25/03/2021.
+//  Created by Lyes BOUKBOUKA on 26/03/2021.
 //
-
 
 import SwiftUI
 import RealityKit
@@ -102,40 +101,40 @@ struct ARViewContainer: UIViewRepresentable {
 
 
 class CustomARView: ARView {
-    
- 
+
+
    
-    let focusSquare = FESquare()
     
+
+    let focusSquare = FESquare()
     required init(frame frameRect: CGRect) {
         super.init(frame: frameRect)
-        
+
         focusSquare.viewDelegate = self
-        focusSquare.delegate = self
-        focusSquare.setAutoUpdate(to: true)
-        
+          focusSquare.delegate = self
+          focusSquare.setAutoUpdate(to: true)
         self.setupARView()
+     
     }
-    
+
     @objc required dynamic init?(coder decoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     func setupARView() {
-        
+
 //        let model : Model
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal, .vertical]
         config.environmentTexturing = .automatic
         config.automaticImageScaleEstimationEnabled = true
-        
+
         if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
             config.sceneReconstruction = .mesh
         }
        self.session.run(config)
-        
-        
-    }
 
+
+    }
 }
 
 extension CustomARView: FEDelegate {
