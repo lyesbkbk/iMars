@@ -66,7 +66,9 @@ struct SwiftUIView: View {
                 .background(Rectangle()
                                 .foregroundColor(.red)
                                 .opacity(0.5))
+                // SCROLLTEXT VVVVVVV
                 VStack{
+                    //
                     Text("Ceci est un test avec un texte qui est un peu long pour faire défiler avec Auto text Scroll")
                         .foregroundColor(.white)
                         .offset(y: scrollText ? -150 : 300)
@@ -74,8 +76,9 @@ struct SwiftUIView: View {
                         .onAppear(){
                             self.scrollText.toggle()
                         }
+                    // Animation a revoir, sens du text horizontal/vertical a revoir 
                 }
-                
+                //SCROLLTEXT /\/\/\/\/\/\
             }
                 HStack(spacing: 0){
                 VStack{
