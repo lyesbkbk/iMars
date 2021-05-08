@@ -65,6 +65,12 @@ struct Sidebar: View {
                                           imageLabel: "map",
                                           textLabel: "Mars"
                     )
+                    SidebarNavigationLink(destination: AnyView(SwiftUIView()),
+                                          tag: Menu.mars,
+                                          selection: self.$selection,
+                                          imageLabel: "map",
+                                          textLabel: "Mars"
+                    )
                 }
                 
                 Section(header: SidebarHeader(title: "Library")) {
