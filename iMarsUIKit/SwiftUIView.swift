@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SwiftUIView: View {
+    @State var scrollText = false
     var body: some View {
         ZStack {
             Image("stars")
@@ -65,6 +66,16 @@ struct SwiftUIView: View {
                 .background(Rectangle()
                                 .foregroundColor(.red)
                                 .opacity(0.5))
+                VStack{
+                    Text("Ceci est un test avec un texte qui est un peu long pour faire défiler avec Auto text Scroll")
+                        .foregroundColor(.white)
+                        .offset(y: scrollText ? -150 : 300)
+                        .animation(Animation.easeOut(duration: 10.0).repeatForever(autoreverses: false))
+                        .onAppear(){
+                            self.scrollText.toggle()
+                        }
+                }
+                
             }
                 HStack(spacing: 0){
                 VStack{
