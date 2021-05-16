@@ -243,6 +243,7 @@
 		059BFBDC26034CEE00F6970F /* iMarsUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				154D74DC2651673B00124257 /* CockpitDesign */,
 				050E3C472603A90100D646D6 /* Model3D */,
 				050E3C482603A92400D646D6 /* Main */,
 				A9D4766426035C4300D9E910 /* Main Screen */,
@@ -269,6 +270,13 @@
 				059BFBE626034CF000F6970F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		154D74DC2651673B00124257 /* CockpitDesign */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CockpitDesign;
 			sourceTree = "<group>";
 		};
 		22462F0E26090D8500205F0E /* Frameworks */ = {
