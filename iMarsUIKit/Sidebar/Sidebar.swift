@@ -65,7 +65,7 @@ struct Sidebar: View {
                                           imageLabel: "map",
                                           textLabel: "Mars"
                     )
-                    SidebarNavigationLink(destination: AnyView(SwiftUIView()),
+                    SidebarNavigationLink(destination: AnyView(CockpitView()),
                                           tag: Menu.mars,
                                           selection: self.$selection,
                                           imageLabel: "map",

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct CockpitView: View {
     @State var scrollText = false
     var body: some View {
         ZStack {
@@ -103,7 +103,7 @@ struct SwiftUIView: View {
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         Landscape {
-            SwiftUIView()
+            CockpitView()
         }
     }
 }
