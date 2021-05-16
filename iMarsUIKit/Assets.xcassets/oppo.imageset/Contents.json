@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "InSight.png",
+      "filename" : "oppo.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "oppo@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "oppo@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
